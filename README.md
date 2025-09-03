@@ -19,7 +19,7 @@ I'm passionate about transforming data into actionable insights, with a focus on
 🚧 *Currently building portfolio - projects coming soon!*
 
 **Planned Projects:**
-- [Workforce Analytics Australia](https://github.com/jess-ferraro-data/workforce-analytics-australia) - Gender pay gap analysis using ABS and WGEA data
+- [Workforce Analytics Australia] - Gender pay gap analysis using ABS and WGEA data
 - [Public Health Insights] - Social determinants of health outcomes analysis
 - [Education Equity Study] - Educational achievement and resource allocation analysis
 - [Climate Data Dashboard] - Environmental trends and renewable energy adoption
