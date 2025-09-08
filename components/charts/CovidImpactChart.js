@@ -184,7 +184,7 @@ export default function CovidImpactChart() {
           border: '1px solid #e5e7eb'
         }}>
           <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>📊</div>
-          <div>Loading your industry comparison data...</div>
+          <div>Loading industry comparison data...</div>
         </div>
       )}
       <div ref={chartRef} style={{ width: '100%' }} />
@@ -195,7 +195,7 @@ export default function CovidImpactChart() {
           color: '#6b7280', 
           fontSize: '0.875rem' 
         }}>
-          Source: ABS Labour Account (your data analysis). Interactive chart - hover for details.
+          Source: ABS Labour Account Quarterly. Interactive chart - hover for details.
         </p>
       )}
     </div>
