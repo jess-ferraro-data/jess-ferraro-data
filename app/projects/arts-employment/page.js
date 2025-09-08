@@ -442,7 +442,7 @@ But why were the arts hit so much harder than even accommodation and food servic
           Australian arts organisations proved remarkably agile in reimagining their operations. 
           Sydney Opera House launched digital performances reaching global audiences. Melbourne&apos;s 
           theatre companies developed socially-distanced outdoor shows. Film production adapted 
-          with "COVID-safe" protocols that became industry standard.
+          with &quot;COVID-safe&quot; protocols that became industry standard.
         </p>
         <div style={{ 
           background: '#eff6ff', 
