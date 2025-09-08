@@ -16,7 +16,7 @@ I'm passionate about transforming data into actionable insights that drive posit
 
 ## 📈 Portfolio Projects
 
-### 🎭 [Australian Arts Employment Analysis]
+### 🎭 Australian Arts Employment Analysis
 Comprehensive analysis of employment trends and equity in Australia's creative industries using ABS and government data. Examining COVID impact, gender pay gaps, and regional disparities.
 - **Skills**: Government API integration, time series analysis, social impact measurement
 - **Tools**: Python, Plotly, ABS APIs
