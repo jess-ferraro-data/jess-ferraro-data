@@ -86,7 +86,7 @@ export default function TimelineChart() {
 
         const layout = {
           title: {
-            text: '<b>Arts Employment Changes: 2019-2024</b><br><sub>Percentage changes over time (your M62 data)</sub>',
+            text: '<b>Arts Employment Changes: 2019-2024</b><br><sub>Employment percentage changes 2019-2024</sub>',
             x: 0.5,
             font: { size: 18, color: '#1f2937' }
           },
@@ -220,19 +220,88 @@ export default function TimelineChart() {
           border: '1px solid #e5e7eb'
         }}>
           <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>📈</div>
-          <div>Loading your timeline data...</div>
+          <div>Loading timeline data...</div>
         </div>
       )}
       <div ref={chartRef} style={{ width: '100%' }} />
       {!isLoading && !error && (
-        <p style={{ 
-          textAlign: 'center', 
-          marginTop: '1rem', 
-          color: '#6b7280', 
-          fontSize: '0.875rem' 
-        }}>
-          Source: Your M62 data analysis (Employment percentage changes). Interactive chart.
-        </p>
+        <div>
+          <p style={{ 
+            textAlign: 'center', 
+            marginTop: '1rem', 
+            color: '#6b7280', 
+            fontSize: '0.875rem' 
+          }}>
+            Source: ABS Labour Account M62 (Employed persons - Percentage changes). Interactive chart.
+          </p>
+          
+          {/* Enhanced timeline commentary */}
+          <div style={{
+            background: '#f0fdfa',
+            border: '1px solid #5eead4',
+            borderRadius: '0.75rem',
+            padding: '2rem',
+            marginTop: '2rem'
+          }}>
+            <h4 style={{
+              fontSize: '1.25rem',
+              fontWeight: '700',
+              color: '#0f766e',
+              marginBottom: '1rem',
+              textAlign: 'center'
+            }}>
+              📅 Key Moments in the Recovery Journey
+            </h4>
+            
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+              gap: '1.5rem'
+            }}>
+              <div style={{ 
+                background: 'white', 
+                padding: '1.5rem', 
+                borderRadius: '0.5rem',
+                borderLeft: '4px solid #dc2626'
+              }}>
+                <div style={{ fontWeight: '600', color: '#dc2626', marginBottom: '0.5rem' }}>
+                  March 2020 - The Lockdown
+                </div>
+                <div style={{ fontSize: '0.875rem', color: '#374151', lineHeight: 1.6 }}>
+                  Theatre doors locked, concert halls went silent, film sets shut down as Australia entered unprecedented restrictions.
+                </div>
+              </div>
+              
+              <div style={{ 
+                background: 'white', 
+                padding: '1.5rem', 
+                borderRadius: '0.5rem',
+                borderLeft: '4px solid #f59e0b'
+              }}>
+                <div style={{ fontWeight: '600', color: '#f59e0b', marginBottom: '0.5rem' }}>
+                  2021 - Digital Transformation
+                </div>
+                <div style={{ fontSize: '0.875rem', color: '#374151', lineHeight: 1.6 }}>
+                  Streaming platforms exploded, virtual events launched, and the creative sector rapidly embraced online delivery.
+                </div>
+              </div>
+              
+              <div style={{ 
+                background: 'white', 
+                padding: '1.5rem', 
+                borderRadius: '0.5rem',
+                borderLeft: '4px solid #22c55e'
+              }}>
+                <div style={{ fontWeight: '600', color: '#22c55e', marginBottom: '0.5rem' }}>
+                  2022-2024 - The Comeback
+                </div>
+                <div style={{ fontSize: '0.875rem', color: '#374151', lineHeight: 1.6 }}>
+                  Hybrid models emerged, live events returned with new safety protocols, employment steadily climbed back toward pre-pandemic levels.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   )
