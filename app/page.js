@@ -219,7 +219,7 @@ export default function Home() {
                 <li style={{ marginBottom: '0.5rem' }}>✓ ABS API integration expertise</li>
                 <li style={{ marginBottom: '0.5rem' }}>✓ Economic impact assessment</li>
                 <li style={{ marginBottom: '0.5rem' }}>✓ Industry benchmarking</li>
-                //<li>✓ Policy recommendation development</li>
+                <li>✓ Policy recommendation development</li>
               </ul>
             </div>
 

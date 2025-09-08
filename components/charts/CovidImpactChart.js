@@ -1,61 +1,203 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function CovidImpactChart() {
   const chartRef = useRef(null)
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState(null)
 
   useEffect(() => {
-    // Sample data - replace with your actual COVID impact data
-    const data = [
-      { industry: 'Arts & Recreation', decline: -15.5, color: '#dc2626' },
-      { industry: 'Accommodation & Food', decline: -8.9, color: '#ea580c' },
-      { industry: 'Retail Trade', decline: -5.2, color: '#d97706' },
-      { industry: 'Professional Services', decline: -3.1, color: '#ca8a04' },
-      { industry: 'Education', decline: -2.8, color: '#65a30d' },
-      { industry: 'Healthcare', decline: 2.1, color: '#16a34a' },
-      { industry: 'Finance', decline: 0.8, color: '#059669' }
-    ]
+    const loadDataAndCreateChart = async () => {
+      try {
+        const Plotly = (await import('plotly.js-dist-min')).default
+        const Papa = (await import('papaparse')).default
+        
+        setIsLoading(true)
+        
+        // Load your actual CSV data
+        const response = await fetch('/data/industry_comparison_covid.csv')
+        if (!response.ok) {
+          throw new Error(`Failed to load CSV: ${response.status}`)
+        }
+        
+        const csvText = await response.text()
+        
+        // Parse CSV with your exact column names
+        const parsedData = Papa.parse(csvText, {
+          header: true,
+          dynamicTyping: true,
+          skipEmptyLines: true
+        })
+        
+        if (parsedData.errors.length > 0) {
+          console.warn('CSV parsing warnings:', parsedData.errors)
+        }
 
-    // Create simple bar chart with D3 or Chart.js
-    // This is a placeholder - implement with your preferred charting library
-    if (chartRef.current) {
-      const chart = createBarChart(data, chartRef.current)
+        // Extract data using your actual column names
+        const industryData = parsedData.data.map(row => ({
+          code: row.industry_code,
+          name: row.industry_name,
+          change: row.employment_change_pct,
+          period: row.period
+        })).filter(row => row.name && row.change !== null) // Remove any empty rows
+
+        // Sort by impact (most negative first)
+        const sortedData = industryData.sort((a, b) => a.change - b.change)
+        
+        const industries = sortedData.map(d => d.name)
+        const changes = sortedData.map(d => d.change)
+
+        // Create colors based on impact severity
+        const colors = changes.map(value => {
+          if (value < -10) return '#dc2626' // Deep red for severe impact
+          if (value < -5) return '#ea580c'  // Orange-red
+          if (value < -2) return '#f59e0b'  // Orange
+          if (value < 0) return '#fbbf24'   // Yellow
+          return '#22c55e'                  // Green for positive
+        })
+
+        // Highlight Arts & Recreation specifically
+        const highlightColors = colors.map((color, i) => {
+          const industry = industries[i]
+          return industry.includes('Arts') || industry.includes('Recreation') 
+            ? '#dc2626' 
+            : color
+        })
+
+        const data = [{
+          x: changes,
+          y: industries,
+          type: 'bar',
+          orientation: 'h',
+          marker: {
+            color: highlightColors,
+            line: {
+              color: 'rgba(0,0,0,0.2)',
+              width: 1
+            }
+          },
+          text: changes.map(val => `${val > 0 ? '+' : ''}${val.toFixed(1)}%`),
+          textposition: 'outside',
+          textfont: {
+            size: 12,
+            color: '#1f2937'
+          },
+          hovertemplate: '<b>%{y}</b><br>' +
+                        'Employment Change: %{x:.2f}%<br>' +
+                        'Period: 2020-Q2<br>' +
+                        '<extra></extra>'
+        }]
+
+        const layout = {
+          title: {
+            text: '<b>COVID-19 Employment Impact by Industry</b><br><sub>Percentage change during peak impact (2020-Q2)</sub>',
+            x: 0.5,
+            font: { size: 18, color: '#1f2937' }
+          },
+          xaxis: {
+            title: 'Employment Change (%)',
+            showgrid: true,
+            gridcolor: '#e5e7eb',
+            zeroline: true,
+            zerolinecolor: '#374151',
+            zerolinewidth: 2,
+            tickfont: { size: 11 }
+          },
+          yaxis: {
+            title: '',
+            tickfont: { size: 11 },
+            automargin: true
+          },
+          plot_bgcolor: 'white',
+          paper_bgcolor: 'white',
+          font: { family: 'system-ui, sans-serif' },
+          margin: { l: 280, r: 100, t: 100, b: 80 },
+          height: 500,
+          annotations: [{
+            x: Math.min(...changes) * 0.8,
+            y: industries.findIndex(name => name.includes('Arts') || name.includes('Recreation')),
+            text: '🎭 Arts hit hardest',
+            showarrow: true,
+            arrowhead: 2,
+            arrowcolor: '#dc2626',
+            font: { color: '#dc2626', size: 12, weight: 'bold' },
+            bgcolor: 'rgba(255,255,255,0.9)',
+            bordercolor: '#dc2626',
+            borderwidth: 1
+          }]
+        }
+
+        const config = {
+          responsive: true,
+          displayModeBar: true,
+          modeBarButtonsToRemove: ['pan2d', 'lasso2d', 'select2d'],
+          displaylogo: false,
+          toImageButtonOptions: {
+            format: 'png',
+            filename: 'covid_employment_impact',
+            height: 500,
+            width: 900,
+            scale: 2
+          }
+        }
+
+        Plotly.newPlot(chartRef.current, data, layout, config)
+        setIsLoading(false)
+
+      } catch (err) {
+        console.error('Chart loading error:', err)
+        setError(`Failed to load chart data: ${err.message}`)
+        setIsLoading(false)
+      }
     }
+
+    loadDataAndCreateChart()
   }, [])
 
-  const createBarChart = (data, container) => {
-    // Placeholder implementation
-    container.innerHTML = `
-      <div style="background: #f8fafc; padding: 2rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-        <h3 style="text-align: center; margin-bottom: 2rem; color: #1a202c; font-size: 1.5rem; font-weight: 700;">
-          Employment Changes During COVID-19 (March-June 2020)
-        </h3>
-        <div style="max-width: 600px; margin: 0 auto;">
-          ${data.map(item => `
-            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-              <div style="width: 200px; font-size: 0.9rem; color: #4a5568;">${item.industry}</div>
-              <div style="flex: 1; background: #e2e8f0; height: 24px; border-radius: 4px; overflow: hidden; margin: 0 1rem;">
-                <div style="
-                  width: ${Math.abs(item.decline) * 6}px; 
-                  height: 100%; 
-                  background: ${item.color}; 
-                  border-radius: 4px;
-                  ${item.decline > 0 ? 'margin-left: auto;' : ''}
-                "></div>
-              </div>
-              <div style="width: 60px; text-align: right; font-weight: 600; color: ${item.color};">
-                ${item.decline > 0 ? '+' : ''}${item.decline}%
-              </div>
-            </div>
-          `).join('')}
-        </div>
-        <p style="text-align: center; margin-top: 2rem; color: #6b7280; font-size: 0.9rem;">
-          Source: ABS Labour Account, March-June 2020
-        </p>
+  if (error) {
+    return (
+      <div style={{ 
+        background: '#fef2f2', 
+        border: '1px solid #fecaca', 
+        borderRadius: '0.5rem', 
+        padding: '1rem', 
+        color: '#dc2626',
+        margin: '2rem 0'
+      }}>
+        <strong>⚠️ Chart Error:</strong> {error}
+        <br />
+        <small>Make sure industry_comparison_covid.csv is in the public/data/ folder</small>
       </div>
-    `
+    )
   }
 
-  return <div ref={chartRef} style={{ margin: '2rem 0' }} />
+  return (
+    <div style={{ margin: '2rem 0' }}>
+      {isLoading && (
+        <div style={{ 
+          textAlign: 'center', 
+          padding: '3rem 2rem', 
+          color: '#6b7280',
+          background: '#f9fafb',
+          borderRadius: '0.5rem',
+          border: '1px solid #e5e7eb'
+        }}>
+          <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>📊</div>
+          <div>Loading industry comparison data...</div>
+        </div>
+      )}
+      <div ref={chartRef} style={{ width: '100%' }} />
+      {!isLoading && !error && (
+        <p style={{ 
+          textAlign: 'center', 
+          marginTop: '1rem', 
+          color: '#6b7280', 
+          fontSize: '0.875rem' 
+        }}>
+          Source: ABS Labour Account Quarterly. Interactive chart - hover for details.
+        </p>
+      )}
+    </div>
+  )
 }
