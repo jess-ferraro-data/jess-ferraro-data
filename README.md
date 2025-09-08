@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📊 Jess Ferraro | Data Analyst | Workforce Analytics & Social Impact
 
-## Getting Started
+I'm passionate about transforming data into actionable insights that drive positive change, with expertise in workforce analytics, social equity research, and evidence-based decision making. Currently building a comprehensive portfolio showcasing analytical skills across diverse social impact domains.
 
-First, run the development server:
+## 🔍 Current Focus
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Portfolio Development**: Creating data-driven projects that demonstrate analytical rigour whilst addressing real-world social challenges, from arts employment equity to regional development insights.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technical Expertise
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**Languages**: Python, SQL, R  
+**Professional Tools**: Databricks, Jupyter Notebooks, Git  
+**Analytics**: Statistical analysis, predictive modelling, data visualisation, time series analysis  
+**Emerging Skills**: Web scraping, API integration, interactive dashboard development  
+**Visualisation**: Plotly, Matplotlib, Seaborn, Tableau Public
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📈 Portfolio Projects
 
-## Learn More
+### 🎭 [Australian Arts Employment Analysis] - *In Progress*
+Comprehensive analysis of employment trends and equity in Australia's creative industries using ABS and government data. Examining COVID impact, gender pay gaps, and regional disparities.
+- **Skills**: Government API integration, time series analysis, social impact measurement
+- **Tools**: Python, Plotly, ABS APIs
 
-To learn more about Next.js, take a look at the following resources:
+### 🚧 Upcoming Projects
+- **Theatre Industry Equity Index**: Multi-dimensional analysis of diversity and inclusion across Australian theatre companies
+- **Regional Arts Funding Impact**: Correlation analysis between government funding and community wellbeing indicators  
+- **Festival Accessibility Audit**: Web scraping and analysis of accessibility provisions across major Australian cultural events
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 What I'm Looking For
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Data analyst roles focused on **workforce analytics**, **social impact**, and **evidence-based decision making**. Particularly interested in positions that align with progressive values, social equity, and using data to create meaningful change in communities and organisations.
 
-## Deploy on Vercel
+## 📍 Based in Central Coast, NSW, Australia
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🎵 Beyond the Data
+When I'm not analysing datasets, you'll find me immersed in musical theatre, exploring Australian nature, or diving deep into social impact research. These interests often inspire my analytical work, bringing a human-centred perspective to data storytelling.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 📫 Let's Connect
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/jessferraro/)
+- **Location**: Central Coast, NSW, Australia
+
+---
+*"Turning data into insights that drive positive change"*
