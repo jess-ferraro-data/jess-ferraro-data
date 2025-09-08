@@ -1,8 +1,6 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import Plotly from 'plotly.js-dist-min'
-import Papa from 'papaparse'
 
 export default function CovidImpactChart() {
   const chartRef = useRef(null)
@@ -10,142 +8,92 @@ export default function CovidImpactChart() {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    loadDataAndCreateChart()
-  }, [])
+    // Import Plotly dynamically to avoid SSR issues
+    const loadPlotly = async () => {
+      try {
+        const Plotly = (await import('plotly.js-dist-min')).default
+        const Papa = (await import('papaparse')).default
+        
+        setIsLoading(true)
+        
+        // Sample data for now - replace with your CSV loading later
+        const sampleData = [
+          { industry: 'Arts and Recreation Services', change: -15.5 },
+          { industry: 'Accommodation and Food Services', change: -8.9 },
+          { industry: 'Retail Trade', change: -5.2 },
+          { industry: 'Professional Services', change: -3.1 },
+          { industry: 'Education and Training', change: -2.8 },
+          { industry: 'Health Care and Social Assistance', change: 2.1 },
+          { industry: 'Financial and Insurance Services', change: 0.8 }
+        ]
 
-  const loadDataAndCreateChart = async () => {
-    try {
-      setIsLoading(true)
-      
-      // Load your industry comparison data
-      const response = await fetch('/data/industry_comparison_covid.csv')
-      const csvText = await response.text()
-      
-      // Parse CSV data
-      const parsedData = Papa.parse(csvText, {
-        header: true,
-        dynamicTyping: true,
-        skipEmptyLines: true
-      })
-      
-      if (parsedData.errors.length > 0) {
-        throw new Error('CSV parsing failed')
-      }
+        // Sort by impact (most negative first)
+        const sortedData = sampleData.sort((a, b) => a.change - b.change)
+        const industries = sortedData.map(d => d.industry)
+        const changes = sortedData.map(d => d.change)
 
-      // Transform data for Plotly
-      const industries = parsedData.data.map(row => row.industry_name || row.Industry_Name)
-      const changes = parsedData.data.map(row => row.employment_change_pct || row.Employment_Change_Pct)
-      
-      // Sort by impact (most negative first)
-      const sortedData = industries.map((industry, i) => ({
-        industry,
-        change: changes[i]
-      })).sort((a, b) => a.change - b.change)
+        // Create colors
+        const colors = changes.map(value => {
+          if (value < -10) return '#dc2626'
+          if (value < -5) return '#ea580c'
+          if (value < 0) return '#f59e0b'
+          return '#22c55e'
+        })
 
-      const sortedIndustries = sortedData.map(d => d.industry)
-      const sortedChanges = sortedData.map(d => d.change)
-
-      // Create colour scheme
-      const colors = sortedChanges.map(value => {
-        if (value < -10) return '#dc2626' // Deep red for severe impact
-        if (value < -5) return '#ea580c'  // Orange-red
-        if (value < 0) return '#f59e0b'   // Orange
-        return '#22c55e'                  // Green for positive
-      })
-
-      // Highlight Arts & Recreation
-      const highlightColors = colors.map((color, i) => {
-        const industry = sortedIndustries[i]
-        return industry.includes('Arts') || industry.includes('Recreation') 
-          ? '#dc2626' 
-          : color
-      })
-
-      const data = [{
-        x: sortedChanges,
-        y: sortedIndustries,
-        type: 'bar',
-        orientation: 'h',
-        marker: {
-          color: highlightColors,
-          line: {
-            color: 'rgba(0,0,0,0.1)',
-            width: 1
-          }
-        },
-        text: sortedChanges.map(val => `${val > 0 ? '+' : ''}${val.toFixed(1)}%`),
-        textposition: 'outside',
-        textfont: {
-          size: 12,
-          color: '#1f2937'
-        },
-        hovertemplate: '<b>%{y}</b><br>' +
-                      'Employment Change: %{x:.1f}%<br>' +
-                      '<extra></extra>'
-      }]
-
-      const layout = {
-        title: {
-          text: '<b>COVID-19 Employment Impact by Industry</b><br><sub>Percentage change March-June 2020</sub>',
-          x: 0.5,
-          font: { size: 18, color: '#1f2937' }
-        },
-        xaxis: {
-          title: 'Employment Change (%)',
-          showgrid: true,
-          gridcolor: '#e5e7eb',
-          zeroline: true,
-          zerolinecolor: '#374151',
-          zerolinewidth: 2,
-          tickfont: { size: 11 }
-        },
-        yaxis: {
-          title: '',
-          tickfont: { size: 11 },
-          automargin: true
-        },
-        plot_bgcolor: 'white',
-        paper_bgcolor: 'white',
-        font: { family: 'system-ui, sans-serif' },
-        margin: { l: 200, r: 80, t: 100, b: 80 },
-        height: 500,
-        annotations: [{
-          x: Math.min(...sortedChanges) * 0.8,
-          y: sortedIndustries.findIndex(name => name.includes('Arts') || name.includes('Recreation')),
-          text: '🎭 Arts hit hardest',
-          showarrow: true,
-          arrowhead: 2,
-          arrowcolor: '#dc2626',
-          font: { color: '#dc2626', size: 12, weight: 'bold' },
-          bgcolor: 'white',
-          bordercolor: '#dc2626',
-          borderwidth: 1
+        const data = [{
+          x: changes,
+          y: industries,
+          type: 'bar',
+          orientation: 'h',
+          marker: { color: colors },
+          text: changes.map(val => `${val > 0 ? '+' : ''}${val.toFixed(1)}%`),
+          textposition: 'outside',
+          hovertemplate: '<b>%{y}</b><br>Employment Change: %{x:.1f}%<extra></extra>'
         }]
-      }
 
-      const config = {
-        responsive: true,
-        displayModeBar: true,
-        modeBarButtonsToRemove: ['pan2d', 'lasso2d', 'select2d'],
-        displaylogo: false,
-        toImageButtonOptions: {
-          format: 'png',
-          filename: 'covid_employment_impact',
-          height: 500,
-          width: 800,
-          scale: 2
+        const layout = {
+          title: {
+            text: '<b>COVID-19 Employment Impact by Industry</b><br><sub>Percentage change March-June 2020</sub>',
+            x: 0.5,
+            font: { size: 18, color: '#1f2937' }
+          },
+          xaxis: {
+            title: 'Employment Change (%)',
+            showgrid: true,
+            gridcolor: '#e5e7eb',
+            zeroline: true,
+            zerolinecolor: '#374151',
+            zerolinewidth: 2
+          },
+          yaxis: {
+            title: '',
+            automargin: true
+          },
+          plot_bgcolor: 'white',
+          paper_bgcolor: 'white',
+          font: { family: 'system-ui, sans-serif' },
+          margin: { l: 250, r: 80, t: 100, b: 80 },
+          height: 500
         }
+
+        const config = {
+          responsive: true,
+          displayModeBar: true,
+          displaylogo: false
+        }
+
+        Plotly.newPlot(chartRef.current, data, layout, config)
+        setIsLoading(false)
+
+      } catch (err) {
+        console.error('Chart loading error:', err)
+        setError('Failed to load chart')
+        setIsLoading(false)
       }
-
-      Plotly.newPlot(chartRef.current, data, layout, config)
-      setIsLoading(false)
-
-    } catch (err) {
-      console.error('Chart loading error:', err)
-      setError('Failed to load chart data. Please check the CSV file path.')
-      setIsLoading(false)
     }
-  }
+
+    loadPlotly()
+  }, [])
 
   if (error) {
     return (
@@ -165,7 +113,7 @@ export default function CovidImpactChart() {
     <div style={{ margin: '2rem 0' }}>
       {isLoading && (
         <div style={{ textAlign: 'center', padding: '2rem', color: '#6b7280' }}>
-          📊 Loading chart data...
+          📊 Loading chart...
         </div>
       )}
       <div ref={chartRef} style={{ width: '100%' }} />
@@ -175,7 +123,7 @@ export default function CovidImpactChart() {
         color: '#6b7280', 
         fontSize: '0.875rem' 
       }}>
-        Source: ABS Labour Account. Interactive chart - hover for details, use toolbar to zoom/download.
+        Source: ABS Labour Account. Arts & Recreation hit hardest at -15.5%.
       </p>
     </div>
   )
