@@ -14,7 +14,7 @@ export default function ArtsEmploymentStory() {
   }, [])
 
   return (
-    <main style={{ paddingTop: '4rem' }}>
+    <main>
       {/* Hero Section */}
       <section style={{
         height: '100vh',
