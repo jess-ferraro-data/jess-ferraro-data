@@ -1,0 +1,4147 @@
+{
+  "recovery_timeline": {
+    "chart_type": "recovery_timeline",
+    "data": [
+      {
+        "TIME_PERIOD": "2018-Q1",
+        "OBS_VALUE": 231.314498077682
+      },
+      {
+        "TIME_PERIOD": "2018-Q1",
+        "OBS_VALUE": 228.595824051657
+      },
+      {
+        "TIME_PERIOD": "2018-Q1",
+        "OBS_VALUE": 222.14690433818
+      },
+      {
+        "TIME_PERIOD": "2018-Q2",
+        "OBS_VALUE": 212.351412494074
+      },
+      {
+        "TIME_PERIOD": "2018-Q2",
+        "OBS_VALUE": 220.617064138007
+      },
+      {
+        "TIME_PERIOD": "2018-Q2",
+        "OBS_VALUE": 224.205396557756
+      },
+      {
+        "TIME_PERIOD": "2018-Q3",
+        "OBS_VALUE": 217.97734240975
+      },
+      {
+        "TIME_PERIOD": "2018-Q3",
+        "OBS_VALUE": 222.041913574575
+      },
+      {
+        "TIME_PERIOD": "2018-Q3",
+        "OBS_VALUE": 225.500139074503
+      },
+      {
+        "TIME_PERIOD": "2018-Q4",
+        "OBS_VALUE": 245.948582115138
+      },
+      {
+        "TIME_PERIOD": "2018-Q4",
+        "OBS_VALUE": 234.781973209118
+      },
+      {
+        "TIME_PERIOD": "2018-Q4",
+        "OBS_VALUE": 227.924206226509
+      },
+      {
+        "TIME_PERIOD": "2019-Q1",
+        "OBS_VALUE": 226.6545867933
+      },
+      {
+        "TIME_PERIOD": "2019-Q1",
+        "OBS_VALUE": 231.403033689599
+      },
+      {
+        "TIME_PERIOD": "2019-Q1",
+        "OBS_VALUE": 228.302132583045
+      },
+      {
+        "TIME_PERIOD": "2019-Q2",
+        "OBS_VALUE": 235.827081008399
+      },
+      {
+        "TIME_PERIOD": "2019-Q2",
+        "OBS_VALUE": 226.678447835177
+      },
+      {
+        "TIME_PERIOD": "2019-Q2",
+        "OBS_VALUE": 235.947443939784
+      },
+      {
+        "TIME_PERIOD": "2019-Q3",
+        "OBS_VALUE": 240.723723507755
+      },
+      {
+        "TIME_PERIOD": "2019-Q3",
+        "OBS_VALUE": 237.131635070921
+      },
+      {
+        "TIME_PERIOD": "2019-Q3",
+        "OBS_VALUE": 240.376772644932
+      },
+      {
+        "TIME_PERIOD": "2019-Q4",
+        "OBS_VALUE": 242.863243876774
+      },
+      {
+        "TIME_PERIOD": "2019-Q4",
+        "OBS_VALUE": 248.066184396488
+      },
+      {
+        "TIME_PERIOD": "2019-Q4",
+        "OBS_VALUE": 259.926004915433
+      },
+      {
+        "TIME_PERIOD": "2020-Q1",
+        "OBS_VALUE": 238.537637441982
+      },
+      {
+        "TIME_PERIOD": "2020-Q1",
+        "OBS_VALUE": 241.903897108617
+      },
+      {
+        "TIME_PERIOD": "2020-Q1",
+        "OBS_VALUE": 239.086589339384
+      },
+      {
+        "TIME_PERIOD": "2020-Q2",
+        "OBS_VALUE": 201.632998279613
+      },
+      {
+        "TIME_PERIOD": "2020-Q2",
+        "OBS_VALUE": 204.426001791511
+      },
+      {
+        "TIME_PERIOD": "2020-Q2",
+        "OBS_VALUE": 193.795559058742
+      },
+      {
+        "TIME_PERIOD": "2020-Q3",
+        "OBS_VALUE": 211.494195485851
+      },
+      {
+        "TIME_PERIOD": "2020-Q3",
+        "OBS_VALUE": 209.657851190623
+      },
+      {
+        "TIME_PERIOD": "2020-Q3",
+        "OBS_VALUE": 210.098790825257
+      },
+      {
+        "TIME_PERIOD": "2020-Q4",
+        "OBS_VALUE": 225.996064481081
+      },
+      {
+        "TIME_PERIOD": "2020-Q4",
+        "OBS_VALUE": 216.600676576606
+      },
+      {
+        "TIME_PERIOD": "2020-Q4",
+        "OBS_VALUE": 215.107572199153
+      },
+      {
+        "TIME_PERIOD": "2021-Q1",
+        "OBS_VALUE": 215.308196983616
+      },
+      {
+        "TIME_PERIOD": "2021-Q1",
+        "OBS_VALUE": 216.380046155872
+      },
+      {
+        "TIME_PERIOD": "2021-Q1",
+        "OBS_VALUE": 215.031400563488
+      },
+      {
+        "TIME_PERIOD": "2021-Q2",
+        "OBS_VALUE": 214.817638520438
+      },
+      {
+        "TIME_PERIOD": "2021-Q2",
+        "OBS_VALUE": 213.207109610767
+      },
+      {
+        "TIME_PERIOD": "2021-Q2",
+        "OBS_VALUE": 206.98647265407
+      },
+      {
+        "TIME_PERIOD": "2021-Q3",
+        "OBS_VALUE": 209.77169657416
+      },
+      {
+        "TIME_PERIOD": "2021-Q3",
+        "OBS_VALUE": 191.257433464091
+      },
+      {
+        "TIME_PERIOD": "2021-Q3",
+        "OBS_VALUE": 191.2225103312
+      },
+      {
+        "TIME_PERIOD": "2021-Q4",
+        "OBS_VALUE": 210.012982814733
+      },
+      {
+        "TIME_PERIOD": "2021-Q4",
+        "OBS_VALUE": 213.117022868034
+      },
+      {
+        "TIME_PERIOD": "2021-Q4",
+        "OBS_VALUE": 205.762904975071
+      },
+      {
+        "TIME_PERIOD": "2022-Q1",
+        "OBS_VALUE": 215.587513468768
+      },
+      {
+        "TIME_PERIOD": "2022-Q1",
+        "OBS_VALUE": 216.996113972439
+      },
+      {
+        "TIME_PERIOD": "2022-Q1",
+        "OBS_VALUE": 217.346614502922
+      },
+      {
+        "TIME_PERIOD": "2022-Q2",
+        "OBS_VALUE": 247.245183689074
+      },
+      {
+        "TIME_PERIOD": "2022-Q2",
+        "OBS_VALUE": 223.225527816859
+      },
+      {
+        "TIME_PERIOD": "2022-Q2",
+        "OBS_VALUE": 238.930338991737
+      },
+      {
+        "TIME_PERIOD": "2022-Q3",
+        "OBS_VALUE": 228.003033863318
+      },
+      {
+        "TIME_PERIOD": "2022-Q3",
+        "OBS_VALUE": 230.776405228819
+      },
+      {
+        "TIME_PERIOD": "2022-Q3",
+        "OBS_VALUE": 231.757550227297
+      },
+      {
+        "TIME_PERIOD": "2022-Q4",
+        "OBS_VALUE": 236.729252741967
+      },
+      {
+        "TIME_PERIOD": "2022-Q4",
+        "OBS_VALUE": 232.675991107426
+      },
+      {
+        "TIME_PERIOD": "2022-Q4",
+        "OBS_VALUE": 230.493631756167
+      },
+      {
+        "TIME_PERIOD": "2023-Q1",
+        "OBS_VALUE": 243.11516484971
+      },
+      {
+        "TIME_PERIOD": "2023-Q1",
+        "OBS_VALUE": 238.653918664944
+      },
+      {
+        "TIME_PERIOD": "2023-Q1",
+        "OBS_VALUE": 239.092953405372
+      },
+      {
+        "TIME_PERIOD": "2023-Q2",
+        "OBS_VALUE": 261.255906547081
+      },
+      {
+        "TIME_PERIOD": "2023-Q2",
+        "OBS_VALUE": 252.740057743232
+      },
+      {
+        "TIME_PERIOD": "2023-Q2",
+        "OBS_VALUE": 257.44814881248
+      },
+      {
+        "TIME_PERIOD": "2023-Q3",
+        "OBS_VALUE": 274.550225262188
+      },
+      {
+        "TIME_PERIOD": "2023-Q3",
+        "OBS_VALUE": 272.161956126453
+      },
+      {
+        "TIME_PERIOD": "2023-Q3",
+        "OBS_VALUE": 272.792689242288
+      },
+      {
+        "TIME_PERIOD": "2023-Q4",
+        "OBS_VALUE": 276.010028850311
+      },
+      {
+        "TIME_PERIOD": "2023-Q4",
+        "OBS_VALUE": 279.604862181355
+      },
+      {
+        "TIME_PERIOD": "2023-Q4",
+        "OBS_VALUE": 282.005831684969
+      },
+      {
+        "TIME_PERIOD": "2024-Q1",
+        "OBS_VALUE": 286.355058615373
+      },
+      {
+        "TIME_PERIOD": "2024-Q1",
+        "OBS_VALUE": 285.223771829681
+      },
+      {
+        "TIME_PERIOD": "2024-Q1",
+        "OBS_VALUE": 276.50060985866
+      },
+      {
+        "TIME_PERIOD": "2024-Q2",
+        "OBS_VALUE": 254.350806684587
+      },
+      {
+        "TIME_PERIOD": "2024-Q2",
+        "OBS_VALUE": 262.524323726876
+      },
+      {
+        "TIME_PERIOD": "2024-Q2",
+        "OBS_VALUE": 266.677959318918
+      },
+      {
+        "TIME_PERIOD": "2024-Q3",
+        "OBS_VALUE": 253.910570568224
+      },
+      {
+        "TIME_PERIOD": "2024-Q3",
+        "OBS_VALUE": 255.522772565199
+      },
+      {
+        "TIME_PERIOD": "2024-Q3",
+        "OBS_VALUE": 257.700629662774
+      },
+      {
+        "TIME_PERIOD": "2024-Q4",
+        "OBS_VALUE": 254.085582935057
+      },
+      {
+        "TIME_PERIOD": "2024-Q4",
+        "OBS_VALUE": 259.276096993633
+      },
+      {
+        "TIME_PERIOD": "2024-Q4",
+        "OBS_VALUE": 254.382845692565
+      }
+    ],
+    "baseline_avg": 219.93951041420834,
+    "chart_config": {
+      "title": "The Arts Bounce Back: Employment Recovery 2018-2024",
+      "subtitle": "Number of people employed in Arts and Recreation Services",
+      "x_axis": "Quarter",
+      "y_axis": "Employed Persons (Thousands)",
+      "line_color": "#2E86AB",
+      "baseline_color": "gray",
+      "covid_period": {
+        "start": "2020-Q1",
+        "end": "2021-Q4"
+      },
+      "covid_highlight_color": "red",
+      "covid_opacity": 0.1
+    },
+    "annotations": [
+      {
+        "type": "pandemic_start",
+        "x": "2020-Q1",
+        "y": 238.537637441982,
+        "text": "Pandemic Begins",
+        "color": "red"
+      },
+      {
+        "type": "lowest_point",
+        "x": "2021-Q3",
+        "y": 191.2225103312,
+        "text": "Lowest Point<br>191k jobs",
+        "color": "darkred"
+      }
+    ]
+  },
+  "recovery_race": {
+    "chart_type": "recovery_race_bars",
+    "data": [
+      {
+        "industry_code": "R",
+        "industry_name": "Arts and Recreation Services",
+        "recovery_percentage": 135.5,
+        "vs_baseline_percentage": 7.0,
+        "decline_percentage": 19.6,
+        "color": "#E74C3C",
+        "is_focus_industry": true
+      },
+      {
+        "industry_code": "H",
+        "industry_name": "Accommodation and Food Services",
+        "recovery_percentage": 119.1,
+        "vs_baseline_percentage": 3.5,
+        "decline_percentage": 18.2,
+        "color": "#F39C12",
+        "is_focus_industry": false
+      },
+      {
+        "industry_code": "G",
+        "industry_name": "Retail Trade",
+        "recovery_percentage": 200,
+        "vs_baseline_percentage": 12.8,
+        "decline_percentage": 1.5,
+        "color": "#E67E22",
+        "is_focus_industry": false
+      },
+      {
+        "industry_code": "P",
+        "industry_name": "Education and Training",
+        "recovery_percentage": 200,
+        "vs_baseline_percentage": 17.8,
+        "decline_percentage": 4.9,
+        "color": "#1ABC9C",
+        "is_focus_industry": false
+      },
+      {
+        "industry_code": "M",
+        "industry_name": "Professional, Scientific and Technical Services",
+        "recovery_percentage": 200,
+        "vs_baseline_percentage": 9.2,
+        "decline_percentage": 7.4,
+        "color": "#9B59B6",
+        "is_focus_industry": false
+      },
+      {
+        "industry_code": "Q",
+        "industry_name": "Health Care and Social Assistance",
+        "recovery_percentage": 0,
+        "vs_baseline_percentage": 43.6,
+        "decline_percentage": -0.7,
+        "color": "#27AE60",
+        "is_focus_industry": false
+      },
+      {
+        "industry_code": "K",
+        "industry_name": "Financial and Insurance Services",
+        "recovery_percentage": 0,
+        "vs_baseline_percentage": 15.6,
+        "decline_percentage": -2.6,
+        "color": "#3498DB",
+        "is_focus_industry": false
+      }
+    ],
+    "chart_config": {
+      "title": "The Recovery Race: How Industries Bounced Back",
+      "subtitle": "Employment recovery from COVID-19 lows",
+      "left_chart_title": "Recovery Progress (%)",
+      "right_chart_title": "vs Pre-COVID Baseline (%)",
+      "color_map": {
+        "R": "#E74C3C",
+        "H": "#F39C12",
+        "Q": "#27AE60",
+        "K": "#3498DB",
+        "M": "#9B59B6",
+        "G": "#E67E22",
+        "P": "#1ABC9C"
+      },
+      "reference_lines": {
+        "recovery_full": 100,
+        "baseline_zero": 0
+      }
+    }
+  },
+  "regional_recovery": {
+    "chart_type": "regional_timeline",
+    "data": [
+      {
+        "region_code": "AUS",
+        "region_name": "Australia",
+        "color": "#000000",
+        "line_width": 4,
+        "timeline_data": [
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 100.13130921269973
+          },
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 99.81673844502694
+          },
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 99.98877880562026
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 100.0
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 100.9703346289858
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 99.9498540729
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.8796407082056
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.64775097777814
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.83422142222877
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 97.27751916939316
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 96.89112640404375
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 96.22576509285452
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 95.96152478385265
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 96.11060751752612
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 95.9118399198531
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 96.09808057870886
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 95.6254566478741
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 95.63944846175637
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 96.22627716054893
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 96.2557416840276
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 96.53982290440557
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 96.49988994484575
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 96.60340206365021
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 95.87577097507013
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 96.89691861527
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 95.69357053652575
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 96.22115317864147
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 96.68602447702528
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 97.3723940299094
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 97.17611575874146
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 98.3626401091798
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 98.05706464198201
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 97.96924328047308
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 99.9269354230968
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 98.520636339809
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 98.52387432431826
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 98.93886707805008
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 99.21922843736763
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 98.4649578759701
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 99.80688203466295
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 100.90429660654084
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 99.31306684509674
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 99.52953437845932
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 99.31010535976532
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 99.6396508614436
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 99.37901656031396
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 99.91830739578744
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 99.77449052859458
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 100.1681570147747
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 100.6639803691994
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 100.73326807117769
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 100.4095047977396
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 101.13073392994443
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 101.15904292321486
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 100.65883705998301
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 101.18370172830338
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 101.51528972779205
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 100.67559728508195
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 99.90439567485693
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 100.93472374538284
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 100.4605446146861
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 101.26009459075806
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 101.02240535979274
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 100.13536623643546
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 101.6616407871804
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 100.67831640295086
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 102.44643447681747
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 102.15494814067631
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 102.04281893565637
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 104.35700071783573
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 102.74355254869975
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 102.73472874319438
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 103.34316075812968
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 102.26685771672328
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 103.37927785388368
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 104.17679846840335
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 105.52637111265885
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 104.18019749477862
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 104.5590648711754
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 104.3453423059291
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 104.86672719227828
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 105.5254862036877
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 105.65284581871222
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 105.23919445521513
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 106.12529571067093
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 106.15363929242636
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 106.27702040319815
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 106.6433542664837
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 106.80140551071516
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 106.77761740971572
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 106.59235173554265
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 107.09239814576124
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 106.1910866233023
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 106.52868478533996
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 107.37783888033555
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 107.48632856429614
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 107.8377661920193
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 107.08659613977696
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 107.70391436799176
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 108.16771041881765
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 108.31370153213338
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 107.70919167452888
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 108.49094341711867
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 108.91546746875314
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 108.50089232889253
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 108.91786605271716
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 108.85313127752099
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 110.66684730750981
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 109.25122297255825
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 107.82045109985847
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 108.96095919130282
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 109.48943885187738
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 110.89657163536471
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 109.69101271790431
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 110.47513990032812
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 110.6966186285453
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 110.14573076997407
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 110.33349722609276
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 110.55966758128577
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 109.91162214661625
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 110.98224782429011
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 111.1506934697884
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 110.87322529300663
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 111.05452343343151
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 111.32595981207336
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 111.36135092824713
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 110.92131911350396
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 111.38229402245454
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 111.11312841143928
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 110.1945572835936
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 111.10338610572437
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 111.0699817103266
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 109.93962174955652
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 110.97176352649039
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 110.60077574767053
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 110.87954458571478
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 110.86967949016542
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 110.24492671677947
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 111.74718610480703
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 111.27772841430281
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 110.79645048476212
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 110.77097963384259
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 110.05424611999663
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 111.7860525411331
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 110.14821456988233
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 110.79764188553266
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 108.94856939821436
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 110.89184649282629
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 111.01382982153369
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 112.42368563224139
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 111.45864609892568
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 111.069445566977
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 111.23331327783407
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 111.12929067147786
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 110.69698848124945
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 111.32764416181864
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 111.63418881810816
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 111.42077080469082
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 111.6389618939789
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 112.02875676827702
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 111.95381662015724
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 111.96261305171835
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 112.25449160813994
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 112.45786447039553
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 112.95268286719849
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 111.53701717320854
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 112.53238618329569
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 112.43430726422419
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 112.78193069957028
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 112.83039810486764
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 112.14111551376551
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 112.18467037221362
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 112.98985155452228
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 112.8394463952673
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 113.15670037404901
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 113.33477294147688
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 113.85146906951789
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 114.58300555374494
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 113.14565656332583
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 113.3107319570178
+          }
+        ]
+      },
+      {
+        "region_code": "1",
+        "region_name": "New South Wales",
+        "color": "#1f77b4",
+        "line_width": 3,
+        "timeline_data": [
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 99.70530264516927
+          },
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 99.68579528671386
+          },
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 99.35151080160365
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 100.0
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 99.91776767816832
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 100.69630724144506
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 100.40312828503228
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 100.07963647504874
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.96240242871292
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 96.7006738459926
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 95.34416327977075
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 96.26338092102114
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 95.37632605701675
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 94.87625386912714
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 94.98985582567741
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 95.0782643401612
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 95.14365700330484
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 95.44052107158116
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 96.06015747323626
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 95.67301942234661
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 95.60559240385595
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 95.98321009948711
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 96.5820982637102
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 95.89409194054504
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 96.03840540173316
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 96.28645981530993
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 96.29154409969628
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 96.7359926082946
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 95.68312978278904
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 96.04847993492925
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 97.17654353473408
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 98.05741545945827
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 97.42137410975806
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 97.56092238288161
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 98.74759826088871
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 97.47031799758851
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 97.19053326143951
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 98.54730868827953
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 97.86937212892585
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 98.18955344804698
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 98.104137162188
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 99.20447770033302
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 98.40884699309719
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 98.28925467198606
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 97.98837456450627
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 98.46388952503187
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 97.73794513237681
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 98.20950973564659
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 99.58773809777993
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 99.6284916774955
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 98.63956195924291
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 100.08283027575746
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 100.10806714427119
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 98.79882618930615
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 100.50971901242409
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 100.08095503024983
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 98.92329297292613
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 96.99833504581865
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 96.92664523526074
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 96.41172140055573
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 97.08252615901864
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 96.85880541104008
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 97.07357203074295
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 97.31826649620827
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 96.48809137805955
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 96.92861724988052
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 99.48601402369243
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 99.9630489231277
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 99.26334374000844
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 99.95924512712257
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 99.91115757546845
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 101.62953815562128
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 100.85434361798909
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 100.56649538033258
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 99.41183320350994
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 101.16249337350642
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 101.26086794454649
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 102.18958825261053
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 101.74474146237014
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 101.98542994473581
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 101.27986622351716
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 101.96435797346007
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 102.51484791845742
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 102.69404677330446
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 103.97496007768572
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 103.89198434371987
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 103.38735381505693
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 104.867153125844
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 104.06750422215814
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 104.86017805777482
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 104.71114599374485
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 103.45399359519183
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 102.974825131139
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 105.2777241866696
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 105.23089862040294
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 104.6396781437623
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 105.18236635921237
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 105.74435784203695
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 105.40756955347672
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 106.41164238578492
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 106.9345157447975
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 106.11161336439083
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 105.9556369420078
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 106.38911841665595
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 106.73877178123026
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 106.60754101981256
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 108.38618144276862
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 106.61023153567145
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 105.07512915554564
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 106.85760314513692
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 106.67229279619636
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 107.03161022792838
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 107.18781574194011
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 108.10705770837781
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 107.60128583338651
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 107.39169147493742
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 106.84305237351491
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 108.20787621160196
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 107.61144531863036
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 108.04204181336539
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 108.79588307428492
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 108.41764563981708
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 108.98091753951003
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 109.18935312760907
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 109.18747933642888
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 108.67116371142149
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 108.12822605980553
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 108.80487496030537
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 108.69583367724309
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 108.81106884628613
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 108.91548572324872
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 108.34409234221027
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 108.70610379637328
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 108.53600661479055
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 108.77342343568495
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 108.84794027422548
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 108.32566877792704
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 108.55427071515851
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 108.41976816703485
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 108.91588044948057
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 109.74310222769901
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 109.60749500085663
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 107.87738454893537
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 108.32948185525517
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 107.6375474470791
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 105.96112860028619
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 108.27621524409045
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 109.40405157601899
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 108.27947485442347
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 108.26817519391795
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 109.15658863346536
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 108.5137884625681
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 108.31145823764277
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 108.32732892007068
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 108.36794429995898
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 107.71289890211875
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 108.49259760831013
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 108.24564792019709
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 108.39769419067306
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 108.39761826285088
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 108.24469539887214
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 108.26153703968741
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 109.28627565126017
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 108.63427967803202
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 108.40949920327341
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 108.51579470882528
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 107.88592931735452
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 108.45731118412445
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 108.46746932213574
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 108.68283586637976
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 108.75055835822633
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 109.0516090043474
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 107.79001149813838
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 108.28625694765013
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 110.47089634763057
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 109.63637532028223
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 109.32845140482583
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 109.53573529292942
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 109.95618876119306
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 111.12937251468833
+          }
+        ]
+      },
+      {
+        "region_code": "2",
+        "region_name": "Victoria",
+        "color": "#ff7f0e",
+        "line_width": 3,
+        "timeline_data": [
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 100.193878222954
+          },
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 101.09017461495564
+          },
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 100.68836755665961
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 100.0
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 100.01784608776936
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 101.55913123106313
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.63628551213228
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.53752376409764
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.72783150074724
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 97.52616343631216
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 98.36442365627649
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 98.05778262469057
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 97.14102514692861
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 97.39459183202985
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 96.84178803936358
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 96.16540217735454
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 96.08101980698348
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 96.22072130320882
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 95.54630406325003
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 95.36688525791033
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 95.2196985325501
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 93.67326406580678
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 94.82361177481296
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 94.71872798307162
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 93.46452756764283
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 94.29718519797918
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 94.55201677993377
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 96.16620754258395
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 95.48775735627257
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 96.60366684371857
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 97.11579897375424
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 97.22890512766224
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 96.91353181317741
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 97.51266865888394
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 98.84308953387317
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 97.387277126518
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 98.35143443887947
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 97.90754093031204
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 98.89120830012715
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 98.38404090306976
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 99.30674942494802
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 100.78871924439082
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 98.78515220905986
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 98.73001376269491
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 98.91846366394978
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 98.94046705942172
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 98.5940021842744
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 99.1050448551804
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 99.95545597400879
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 99.37936500999889
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 99.6770847414556
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 99.56348469527912
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 99.62335092992748
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 99.5236297117274
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 100.25799790458956
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 99.81850197231674
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 99.75538284803011
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 99.98155636188044
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 101.04503938061697
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 99.92871679548897
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 100.03025721435723
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 99.24611500214672
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 100.16372418764881
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 98.6480084110034
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 97.96940408563329
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 100.41073440469826
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 100.37676621316733
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 100.50043233799808
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 100.76214691693328
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 101.81874190297191
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 101.1981299483917
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 102.98451544765656
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 101.70724442297623
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 101.04758411348713
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 100.45094693773984
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 102.28264777862195
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 103.32341086669278
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 104.75073533934349
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 102.88201252651818
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 102.60771275911462
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 102.8082185411846
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 103.83808210110945
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 103.47216316641983
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 104.26914736593254
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 103.92844397433348
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 104.04251653799372
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 103.64908256340735
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 105.55063665494933
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 105.44605240854905
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 104.60174199451515
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 104.98346244050558
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 105.72485645643259
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 105.16384675397185
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 105.45222928037228
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 105.69901813234637
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 104.32559991009059
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 105.5773550278329
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 106.32284338071665
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 106.18422814046558
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 105.99202809840918
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 106.64676290285591
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 106.69185541912292
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 107.11989572274565
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 107.32437818071305
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 107.46678493374209
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 107.6120795509945
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 108.37856866183135
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 107.336123518191
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 106.36583632659745
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 107.0458980133149
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 108.12504398478795
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 108.63029547711879
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 109.24683299700295
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 110.62929226192955
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 110.65195830678911
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 109.1164551328893
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 110.84858800875325
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 109.52225891939567
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 108.8510555988091
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 109.36893270533707
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 109.77909014833627
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 109.85662253802593
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 110.07681511280924
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 110.29354028059706
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 109.87279300584711
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 110.0998317194502
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 109.83244466724005
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 109.9804077951276
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 110.97833557088681
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 109.61186180402362
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 109.70601791852606
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 108.47827386512927
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 108.35018848605247
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 107.6981290745191
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 109.52888398886982
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 109.36013908301803
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 108.70225348130955
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 109.37416627151177
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 109.48548544398047
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 109.25419464829662
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 109.66153647480732
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 110.10381143007713
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 109.241860906654
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 109.15596180588034
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 109.30448135187525
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 108.21161354772619
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 108.97294611773324
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 110.74944603890798
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 109.45687362695568
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 109.5084584042384
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 109.7059592148627
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 110.26531962169574
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 110.12742922900611
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 110.07256295504617
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 109.700889572201
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 109.13488185404351
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 110.45215418680748
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 110.54885638508748
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 110.29701126303499
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 110.73932621443805
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 110.99948320764629
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 111.08518060280943
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 113.32026463731792
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 111.58819310437389
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 112.11805167106854
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 112.66821879829165
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 111.57388456929156
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 111.9748852916122
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 112.22320844147211
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 112.14961591545338
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 112.82969330253208
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 112.19913145783289
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 111.56841288993962
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 112.05380194053538
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 112.07892385191944
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 111.74692360596666
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 111.90374346515964
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 111.1468873591019
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 111.3903191615779
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 112.04268456063573
+          }
+        ]
+      },
+      {
+        "region_code": "3",
+        "region_name": "Queensland",
+        "color": "#2ca02c",
+        "line_width": 3,
+        "timeline_data": [
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 100.8886125094139
+          },
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 100.24623484662318
+          },
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 100.28401648360419
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 100.0
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 100.06760030916504
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 100.85522970523337
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.57198284375966
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.84855230337475
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.04715444330368
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 96.10269102170498
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 95.57535138425015
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 95.87470121171012
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 95.60453290446418
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 94.53177924231547
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 94.66223095786984
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 95.2900989999984
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 95.28691923856688
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 95.84233447164131
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 97.2308295742599
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 96.90125755370998
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 96.26344177419504
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 96.603196688596
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 96.91667036973232
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 96.82171187328117
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 96.48375302262146
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 97.4346516855032
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 96.93877882183683
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 98.0603787857804
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 97.62649375687073
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 98.08580415008346
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 98.6645048019065
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 98.36550838872354
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 98.0528808979079
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 99.23373702174115
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 101.04942336589708
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 99.48753743449448
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 99.29180065257597
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 100.02141980396368
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 99.80426650333918
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 102.44209910310984
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 100.40757908656322
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 103.35594956293544
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 101.0914929939156
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 101.01724945285669
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 100.62984689139431
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 101.61106442027281
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 101.27327557811631
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 101.52249105346564
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 103.0397183771595
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 103.14282581116521
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 102.19785186261797
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 104.24055999217042
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 104.17043222780535
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 102.78592605229674
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 103.65075804642923
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 103.37260373344266
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 103.35797799029969
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 102.79170958023096
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 103.85980105756656
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 102.43324845434476
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 104.29813078333152
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 104.9522265659473
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 105.48205842190603
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 104.73131532318551
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 104.56333074680381
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 105.06018405151971
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 105.24098870719656
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 105.0679726333934
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 104.75851385588999
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 105.90190177386806
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 105.72208299817376
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 107.36999235800569
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 106.35710874435462
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 106.73394177651649
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 105.56649002116541
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 107.71869956925768
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 107.65031878524434
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 108.6674282383145
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 108.77229343022034
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 108.52949895120561
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 108.35798829644143
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 109.34890856136018
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 109.63465882524122
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 109.24931953115482
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 109.8397273320715
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 109.8802163951521
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 109.70553347640634
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 109.26164230234431
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 109.9233277766103
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 109.11036145909081
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 110.04818583103018
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 109.59101527044292
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 109.35469661677043
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 110.19733673354561
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 110.41029556836017
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 109.94479203960933
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 109.6274062024068
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 110.41274864236792
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 110.20053573933
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 109.76758992094116
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 110.28127936940291
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 110.67979588600952
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 111.42227821599447
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 110.93360364946247
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 111.72972165213307
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 111.72037621982606
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 113.44182075701714
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 111.13838424653457
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 110.06874910164322
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 111.29958098350572
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 110.89695146584964
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 111.08025795045529
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 111.48128496457683
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 112.08565223819672
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 111.74977204649723
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 111.98218120796544
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 111.58405566798028
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 111.65528826433795
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 111.33889585157387
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 112.09499361480692
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 113.01983600747525
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 112.46679719946559
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 113.04149931604665
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 113.8576026568389
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 113.63801414790925
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 112.79513163976492
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 113.76303167060662
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 112.99475717336969
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 113.99282655630161
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 113.04968673198854
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 112.54437798623829
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 112.01746321153969
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 113.04666613616207
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 112.12467075664468
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 112.75479501183905
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 112.6315881917986
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 112.12755718772878
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 113.08080054894822
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 113.21417417820423
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 113.52746878843305
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 113.85882044356951
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 114.69246198613038
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 112.98057616503729
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 113.472242255932
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 112.68374970899167
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 111.79749048108829
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 113.84455408331343
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 116.30744487101259
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 115.2735260131331
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 114.29519341688056
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 114.59126200278338
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 114.19489220001553
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 114.76490394254127
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 115.68151126153441
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 115.19101252456593
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 115.33995101863302
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 115.50546523943935
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 115.42170085475153
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 115.54078107469026
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 115.84471183258319
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 116.89943239993185
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 116.5729164348962
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 116.08964828528737
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 115.88924317911933
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 116.15486524690081
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 116.53252874130527
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 115.10514587303659
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 115.72672317004056
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 115.19765528238754
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 115.91033048416325
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 116.97599180920012
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 117.44260284813654
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 117.31770719755087
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 117.81358318825977
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 118.78822866429925
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 118.40021554935882
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 117.89028286387276
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 118.25719329479641
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 118.08752095123592
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 119.8575280106821
+          }
+        ]
+      },
+      {
+        "region_code": "5",
+        "region_name": "Western Australia",
+        "color": "#d62728",
+        "line_width": 3,
+        "timeline_data": [
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 99.15996155733697
+          },
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 99.10946206780883
+          },
+          {
+            "TIME_PERIOD": "2020-01",
+            "index": 99.6556778542697
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 100.0
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 100.95276910412416
+          },
+          {
+            "TIME_PERIOD": "2020-02",
+            "index": 99.63223153839942
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.95821528657933
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.41072166421604
+          },
+          {
+            "TIME_PERIOD": "2020-03",
+            "index": 99.58830583940052
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 97.51640227395355
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 97.33427044786383
+          },
+          {
+            "TIME_PERIOD": "2020-04",
+            "index": 97.47998032105252
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 97.48619049466382
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 97.40441969748812
+          },
+          {
+            "TIME_PERIOD": "2020-05",
+            "index": 97.3041416814179
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 97.35471010888534
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 95.9970172214811
+          },
+          {
+            "TIME_PERIOD": "2020-06",
+            "index": 95.65053095513233
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 97.40931629793573
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 97.40182235203163
+          },
+          {
+            "TIME_PERIOD": "2020-07",
+            "index": 97.47910933440706
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 97.65059351967543
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 97.81570292417783
+          },
+          {
+            "TIME_PERIOD": "2020-08",
+            "index": 96.88943195872962
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 98.08480745312507
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 96.8823790342857
+          },
+          {
+            "TIME_PERIOD": "2020-09",
+            "index": 97.73116454273034
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 98.30649621535217
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 98.62030623080594
+          },
+          {
+            "TIME_PERIOD": "2020-10",
+            "index": 98.38566206475421
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 100.01420671443559
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 99.1303507337853
+          },
+          {
+            "TIME_PERIOD": "2020-11",
+            "index": 99.4231082129806
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 101.24703650755897
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 99.52178350451504
+          },
+          {
+            "TIME_PERIOD": "2020-12",
+            "index": 99.7295365101445
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 99.78781267426497
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 98.56601878376684
+          },
+          {
+            "TIME_PERIOD": "2021-01",
+            "index": 98.44233263011091
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 99.19633006998319
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 100.13036259351686
+          },
+          {
+            "TIME_PERIOD": "2021-02",
+            "index": 99.99572843637327
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 99.74478002137259
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 99.38225452009
+          },
+          {
+            "TIME_PERIOD": "2021-03",
+            "index": 100.2301379201688
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 99.70804471709775
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 100.59261473901546
+          },
+          {
+            "TIME_PERIOD": "2021-04",
+            "index": 100.03498751669777
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 101.15845752533916
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 99.89800286430844
+          },
+          {
+            "TIME_PERIOD": "2021-05",
+            "index": 100.18376603759683
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 101.91267515103806
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 102.300147185673
+          },
+          {
+            "TIME_PERIOD": "2021-06",
+            "index": 101.92187173567426
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 102.77995561592459
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 102.7603534287083
+          },
+          {
+            "TIME_PERIOD": "2021-07",
+            "index": 102.91301501359233
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 103.39589306414125
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 102.42723324208234
+          },
+          {
+            "TIME_PERIOD": "2021-08",
+            "index": 103.66188023002714
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 103.67785018725326
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 104.48451055667367
+          },
+          {
+            "TIME_PERIOD": "2021-09",
+            "index": 104.61410832735578
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 105.08326385356168
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 105.22596428367746
+          },
+          {
+            "TIME_PERIOD": "2021-10",
+            "index": 105.39789379059937
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 106.57207406513535
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 105.91311880234784
+          },
+          {
+            "TIME_PERIOD": "2021-11",
+            "index": 105.95471115272383
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 108.23415904231813
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 106.62690632756102
+          },
+          {
+            "TIME_PERIOD": "2021-12",
+            "index": 106.57458417931147
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 106.96916237796945
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 106.86685248231338
+          },
+          {
+            "TIME_PERIOD": "2022-01",
+            "index": 107.21379717900392
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 107.88215623310276
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 108.8877989359021
+          },
+          {
+            "TIME_PERIOD": "2022-02",
+            "index": 107.84319818330172
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 107.09340335637556
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 106.91342290534358
+          },
+          {
+            "TIME_PERIOD": "2022-03",
+            "index": 108.47661176279072
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 109.11719093391316
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 109.40007516172487
+          },
+          {
+            "TIME_PERIOD": "2022-04",
+            "index": 108.92564934189784
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 109.73368883854067
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 109.81175107463966
+          },
+          {
+            "TIME_PERIOD": "2022-05",
+            "index": 110.23328571171689
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 110.27288220857139
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 109.70976158373628
+          },
+          {
+            "TIME_PERIOD": "2022-06",
+            "index": 110.13510843460037
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 111.0593159835879
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 110.7551149370663
+          },
+          {
+            "TIME_PERIOD": "2022-07",
+            "index": 110.82681368969742
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 110.32059305455984
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 111.33462102823069
+          },
+          {
+            "TIME_PERIOD": "2022-08",
+            "index": 111.25048593271944
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 111.83324115336389
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 110.9623975471987
+          },
+          {
+            "TIME_PERIOD": "2022-09",
+            "index": 111.9889867710945
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 112.52325749424719
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 111.16394690914011
+          },
+          {
+            "TIME_PERIOD": "2022-10",
+            "index": 110.60244705797331
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 112.69095184796967
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 113.274776998131
+          },
+          {
+            "TIME_PERIOD": "2022-11",
+            "index": 113.31253507738263
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 114.81860789386198
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 114.11080961212843
+          },
+          {
+            "TIME_PERIOD": "2022-12",
+            "index": 116.53974827161105
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 114.78343611440967
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 114.53456857253114
+          },
+          {
+            "TIME_PERIOD": "2023-01",
+            "index": 114.60951184759568
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 115.26624072721201
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 116.3495905232277
+          },
+          {
+            "TIME_PERIOD": "2023-02",
+            "index": 115.22909198217393
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 115.50136089600056
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 115.53008954390982
+          },
+          {
+            "TIME_PERIOD": "2023-03",
+            "index": 115.40965488961832
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 115.75221646080153
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 115.34710073918724
+          },
+          {
+            "TIME_PERIOD": "2023-04",
+            "index": 115.19462072014635
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 113.39179082418495
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 113.92123053174028
+          },
+          {
+            "TIME_PERIOD": "2023-05",
+            "index": 115.1433681616453
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 114.96279518750134
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 114.61666705505853
+          },
+          {
+            "TIME_PERIOD": "2023-06",
+            "index": 114.19049764515864
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 113.83304712802374
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 114.14114176710245
+          },
+          {
+            "TIME_PERIOD": "2023-07",
+            "index": 114.86951499924945
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 114.62716244567592
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 115.68782357423477
+          },
+          {
+            "TIME_PERIOD": "2023-08",
+            "index": 114.8483298843135
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 113.45711403157132
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 114.8853607138026
+          },
+          {
+            "TIME_PERIOD": "2023-09",
+            "index": 114.51668201806338
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 115.38950247620427
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 114.98470197575159
+          },
+          {
+            "TIME_PERIOD": "2023-10",
+            "index": 114.58794199807616
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 117.22043933952844
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 116.68478614031137
+          },
+          {
+            "TIME_PERIOD": "2023-11",
+            "index": 115.129511967119
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 115.33866050759751
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 114.67253773879418
+          },
+          {
+            "TIME_PERIOD": "2023-12",
+            "index": 116.37468302743999
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 114.33227282868297
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 115.66967636540465
+          },
+          {
+            "TIME_PERIOD": "2024-01",
+            "index": 114.2952471466846
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 116.12735670246737
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 117.09351637936632
+          },
+          {
+            "TIME_PERIOD": "2024-02",
+            "index": 118.17458964770917
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 117.13825282832677
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 116.69326297344813
+          },
+          {
+            "TIME_PERIOD": "2024-03",
+            "index": 117.2376519124807
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 116.79299347191152
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 116.22431537592506
+          },
+          {
+            "TIME_PERIOD": "2024-04",
+            "index": 117.36001813718097
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 118.05246742022715
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 118.27976828517322
+          },
+          {
+            "TIME_PERIOD": "2024-05",
+            "index": 118.91621699528523
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 118.30732724651212
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 118.6475593562349
+          },
+          {
+            "TIME_PERIOD": "2024-06",
+            "index": 118.72973093355515
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 119.09606548346991
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 119.04356709949344
+          },
+          {
+            "TIME_PERIOD": "2024-07",
+            "index": 119.38663267351201
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 118.71075943074703
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 119.42939485379816
+          },
+          {
+            "TIME_PERIOD": "2024-08",
+            "index": 119.80114431442934
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 119.64317708833478
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 119.92390165498776
+          },
+          {
+            "TIME_PERIOD": "2024-09",
+            "index": 118.81617418811219
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 118.35906475215221
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 119.81250458435584
+          },
+          {
+            "TIME_PERIOD": "2024-10",
+            "index": 119.31899122339186
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 120.01626770176483
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 119.7548622198947
+          },
+          {
+            "TIME_PERIOD": "2024-11",
+            "index": 120.22684669360075
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 122.45672744672602
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 120.6812776654691
+          },
+          {
+            "TIME_PERIOD": "2024-12",
+            "index": 120.36106397725888
+          }
+        ]
+      }
+    ],
+    "chart_config": {
+      "title": "Regional Recovery Patterns",
+      "subtitle": "Employment levels by state (All industries, Feb 2020 = 100)",
+      "x_axis": "Month",
+      "y_axis": "Employment Index (Feb 2020 = 100)",
+      "baseline_value": 100,
+      "covid_period": {
+        "start": "2020-03",
+        "end": "2020-06"
+      },
+      "state_colors": {
+        "1": "#1f77b4",
+        "2": "#ff7f0e",
+        "3": "#2ca02c",
+        "5": "#d62728",
+        "AUS": "#000000"
+      }
+    }
+  },
+  "current_state_dashboard": {
+    "chart_type": "current_state_dashboard",
+    "data": {
+      "employment_current": 259.276096993633,
+      "wage_current": 15356.18775169713,
+      "hours_current": 23.684173464061,
+      "period": "2024-Q4",
+      "recovery_percentage": 135.5,
+      "vs_baseline_percentage": 7.0,
+      "decline_percentage": 19.6,
+      "industry_rank": 4,
+      "total_industries": 7
+    },
+    "chart_config": {
+      "title": "Current State: Arts & Recreation Sector",
+      "recovery_status": "THRIVING",
+      "status_colors": {
+        "THRIVING": "#27AE60",
+        "RECOVERED": "#F39C12",
+        "RECOVERING": "#E74C3C"
+      }
+    }
+  }
+}
