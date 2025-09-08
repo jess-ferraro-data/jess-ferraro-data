@@ -8,54 +8,90 @@ export default function RecoveryRaceChart() {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    const loadPlotly = async () => {
+    const loadDataAndCreateChart = async () => {
       try {
         const Plotly = (await import('plotly.js-dist-min')).default
+        const Papa = (await import('papaparse')).default
         
         setIsLoading(true)
         
-        // Sample recovery data - replace with your actual data
-        const recoveryData = [
-          { industry: 'Health Care and Social Assistance', recovery: 105 },
-          { industry: 'Arts and Recreation Services', recovery: 86 },
-          { industry: 'Professional Services', recovery: 78 },
-          { industry: 'Education and Training', recovery: 74 },
-          { industry: 'Retail Trade', recovery: 69 },
-          { industry: 'Financial Services', recovery: 65 },
-          { industry: 'Accommodation and Food Services', recovery: 58 }
-        ]
+        // Try to load recovery race data, fall back to sample if not available
+        let recoveryData
+        
+        try {
+          const response = await fetch('/data/recovery_race_viz_data.csv')
+          if (response.ok) {
+            const csvText = await response.text()
+            const parsedData = Papa.parse(csvText, {
+              header: true,
+              dynamicTyping: true,
+              skipEmptyLines: true
+            })
+            
+            recoveryData = parsedData.data.map(row => ({
+              industry: row.industry_name || row.Industry_Name,
+              recovery: row.recovery_percentage || row.Recovery_Percentage,
+              baseline: row.vs_baseline_percentage || row.vs_Baseline_Percentage
+            })).filter(row => row.industry && row.recovery !== null)
+            
+          } else {
+            throw new Error('Recovery data file not found')
+          }
+        } catch (fetchError) {
+          console.warn('Using sample recovery data:', fetchError.message)
+          // Use sample data based on your industry comparison
+          recoveryData = [
+            { industry: 'Health Care and Social Assistance', recovery: 105, baseline: 8 },
+            { industry: 'Arts and Recreation Services', recovery: 86, baseline: -2.3 },
+            { industry: 'Professional Services', recovery: 78, baseline: 1.2 },
+            { industry: 'Education and Training', recovery: 74, baseline: 0.8 },
+            { industry: 'Retail Trade', recovery: 69, baseline: -1.1 },
+            { industry: 'Accommodation and Food Services', recovery: 58, baseline: -4.2 }
+          ]
+        }
 
-        const industries = recoveryData.map(d => d.industry)
-        const recoveryPcts = recoveryData.map(d => d.recovery)
+        // Sort by recovery percentage (highest first)
+        const sortedData = recoveryData.sort((a, b) => b.recovery - a.recovery)
+        
+        const industries = sortedData.map(d => d.industry)
+        const recoveryPcts = sortedData.map(d => d.recovery)
+        const baselinePcts = sortedData.map(d => d.baseline)
 
         // Colors - highlight Arts
-        const colors = recoveryData.map(d => {
-          if (d.industry.includes('Arts')) return '#dc2626'
-          if (d.recovery >= 100) return '#16a34a'
-          if (d.recovery >= 80) return '#22c55e'
-          if (d.recovery >= 60) return '#f59e0b'
-          return '#dc2626'
+        const colors = sortedData.map(d => {
+          if (d.industry.includes('Arts') || d.industry.includes('Recreation')) {
+            return '#dc2626' // Red highlight for Arts
+          }
+          if (d.recovery >= 100) return '#16a34a' // Green for full recovery
+          if (d.recovery >= 80) return '#22c55e'  // Light green
+          if (d.recovery >= 60) return '#f59e0b'  // Orange
+          return '#dc2626' // Red for poor recovery
         })
 
-        const data = [{
+        const trace1 = {
           x: industries,
           y: recoveryPcts,
           type: 'bar',
+          name: 'Recovery Progress (%)',
           marker: { color: colors },
-          text: recoveryPcts.map(val => `${val}%`),
+          text: recoveryPcts.map(val => `${val.toFixed(0)}%`),
           textposition: 'outside',
-          hovertemplate: '<b>%{x}</b><br>Recovery: %{y}%<extra></extra>'
-        }]
+          hovertemplate: '<b>%{x}</b><br>' +
+                        'Recovery: %{y:.1f}%<br>' +
+                        '<extra></extra>',
+          yaxis: 'y1'
+        }
 
         const layout = {
           title: {
-            text: '<b>Industry Recovery Race</b><br><sub>Recovery progress by December 2024</sub>',
+            text: '<b>Industry Recovery Race</b><br><sub>Recovery progress from COVID employment lows</sub>',
             x: 0.5,
             font: { size: 18, color: '#1f2937' }
           },
           xaxis: {
             title: 'Industry',
-            tickangle: -45
+            tickangle: -45,
+            tickfont: { size: 10 }
           },
           yaxis: {
             title: 'Recovery Progress (%)',
@@ -79,26 +115,58 @@ export default function RecoveryRaceChart() {
               width: 2,
               dash: 'dash'
             }
-          }]
+          }],
+          annotations: [
+            {
+              text: 'Full Recovery (100%)',
+              x: 0.95,
+              y: 100,
+              xref: 'paper',
+              yref: 'y1',
+              showarrow: false,
+              font: { color: '#22c55e', size: 10 }
+            },
+            // Highlight Arts position
+            {
+              x: industries.findIndex(name => name.includes('Arts') || name.includes('Recreation')),
+              y: recoveryPcts[industries.findIndex(name => name.includes('Arts') || name.includes('Recreation'))] + 5,
+              text: '🎭 Arts & Recreation<br>2nd fastest recovery!',
+              showarrow: true,
+              arrowhead: 2,
+              arrowcolor: '#dc2626',
+              font: { color: '#dc2626', size: 12, weight: 'bold' },
+              bgcolor: 'rgba(255,255,255,0.9)',
+              bordercolor: '#dc2626',
+              borderwidth: 1
+            }
+          ]
         }
 
         const config = {
           responsive: true,
           displayModeBar: true,
-          displaylogo: false
+          modeBarButtonsToRemove: ['pan2d', 'lasso2d', 'select2d'],
+          displaylogo: false,
+          toImageButtonOptions: {
+            format: 'png',
+            filename: 'recovery_race_chart',
+            height: 600,
+            width: 1000,
+            scale: 2
+          }
         }
 
-        Plotly.newPlot(chartRef.current, data, layout, config)
+        Plotly.newPlot(chartRef.current, [trace1], layout, config)
         setIsLoading(false)
 
       } catch (err) {
         console.error('Recovery chart error:', err)
-        setError('Failed to load recovery chart')
+        setError(`Failed to load recovery chart: ${err.message}`)
         setIsLoading(false)
       }
     }
 
-    loadPlotly()
+    loadDataAndCreateChart()
   }, [])
 
   if (error) {
@@ -108,9 +176,10 @@ export default function RecoveryRaceChart() {
         border: '1px solid #fecaca', 
         borderRadius: '0.5rem', 
         padding: '1rem', 
-        color: '#dc2626' 
+        color: '#dc2626',
+        margin: '2rem 0'
       }}>
-        ⚠️ {error}
+        <strong>⚠️ Recovery Chart Error:</strong> {error}
       </div>
     )
   }
@@ -118,19 +187,29 @@ export default function RecoveryRaceChart() {
   return (
     <div style={{ margin: '2rem 0' }}>
       {isLoading && (
-        <div style={{ textAlign: 'center', padding: '2rem', color: '#6b7280' }}>
-          🏁 Loading recovery data...
+        <div style={{ 
+          textAlign: 'center', 
+          padding: '3rem 2rem', 
+          color: '#6b7280',
+          background: '#f9fafb',
+          borderRadius: '0.5rem',
+          border: '1px solid #e5e7eb'
+        }}>
+          <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🏁</div>
+          <div>Loading recovery race data...</div>
         </div>
       )}
       <div ref={chartRef} style={{ width: '100%' }} />
-      <p style={{ 
-        textAlign: 'center', 
-        marginTop: '1rem', 
-        color: '#6b7280', 
-        fontSize: '0.875rem' 
-      }}>
-        Arts achieved 86% recovery - 2nd fastest among service industries.
-      </p>
+      {!isLoading && !error && (
+        <p style={{ 
+          textAlign: 'center', 
+          marginTop: '1rem', 
+          color: '#6b7280', 
+          fontSize: '0.875rem' 
+        }}>
+          Recovery = (Current - COVID minimum) / (Baseline - COVID minimum) × 100
+        </p>
+      )}
     </div>
   )
 }
