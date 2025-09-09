@@ -94,7 +94,7 @@ export default function RootLayout({ children }) {
                 "Data Visualisation",
                 "Employment Statistics"
               ],
-              "alumniOf": "Central Queensland University",
+              "alumniOf": "University of New South Wales",
               "address": {
                 "@type": "PostalAddress",
                 "addressRegion": "NSW",
