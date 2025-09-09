@@ -1,30 +1,38 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Navigation from './components/Navigation'
+import Script from 'next/script'
+import Navigation from '../components/Navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: {
-    template: '%s | Jess Ferraro - Data Portfolio',
-    default: 'Jess Ferraro - Data Portfolio'
-  },
-  description: 'Data Analyst & Scientist showcasing advanced analytics and visualisation projects',
-  keywords: [
-    'data analyst',
-    'data scientist', 
-    'workforce analytics',
-    'Australian employment data',
-    'ABS data analysis',
-    'Python data analysis',
-    'employment recovery',
-    'arts industry analysis',
-    'Central Coast NSW',
-    'EY data analyst'
-  ].join(', '),
+  title: 'Jess Ferraro - Data Analyst Portfolio',
+  description: 'Data Analyst specialising in workforce analytics and economic impact analysis. Currently Data Analyst Intern at EY. Central Coast, NSW.',
+  keywords: 'Jess Ferraro, data analyst, workforce analytics, EY intern, Central Coast NSW, employment data, data visualisation',
   authors: [{ name: 'Jess Ferraro' }],
   creator: 'Jess Ferraro',
-  publisher: 'Jess Ferraro',
+  openGraph: {
+    title: 'Jess Ferraro - Data Analyst Portfolio',
+    description: 'Data Analyst specialising in workforce analytics and economic impact analysis. View my COVID-19 employment recovery analysis and other projects.',
+    url: 'https://www.jessferraro.com',
+    siteName: 'Jess Ferraro Data Portfolio',
+    locale: 'en_AU',
+    type: 'website',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Jess Ferraro - Data Analyst Portfolio'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jess Ferraro - Data Analyst Portfolio',
+    description: 'Data Analyst specialising in workforce analytics and economic impact analysis.',
+    images: ['/images/og-image.jpg']
+  },
   robots: {
     index: true,
     follow: true,
@@ -36,153 +44,113 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
-  openGraph: {
-    type: 'website',
-    locale: 'en_AU',
-    url: 'https://www.jessferraro.com',
-    siteName: 'Jess Ferraro - Data Portfolio',
-    title: 'Jess Ferraro - Data Analyst & Scientist Portfolio',
-    description: 'Specialising in workforce analytics and Australian employment data insights.',
-    images: [
-      {
-        url: '/og-image.jpg', // You'll need to create this
-        width: 1200,
-        height: 630,
-        alt: 'Jess Ferraro - Data Analyst Portfolio',
-      },
-    ],
-  },
-  alternates: {
-    canonical: 'https://jessferraro.com',
-  },
-  category: 'Data Analytics',
+  verification: {
+    google: 'hz0bkbbbsOvg00_sgcBWJBbiNnT7VzotgFRNiOzfk40'
+  }
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en-AU">
+      <head>
+        {/* Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-8X1F4FM1HW"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8X1F4FM1HW', {
+              page_title: document.title,
+              page_location: window.location.href,
+            });
+          `}
+        </Script>
+        
+        {/* Structured Data for SEO */}
+        <Script id="structured-data" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Jess Ferraro",
+              "jobTitle": "Data Analyst",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "EY"
+              },
+              "url": "https://www.jessferraro.com",
+              "sameAs": [
+                "https://linkedin.com/in/jessferraro",
+                "https://github.com/jess-ferraro-data"
+              ],
+              "knowsAbout": [
+                "Data Analysis",
+                "Workforce Analytics", 
+                "Python",
+                "Data Visualisation",
+                "Employment Statistics"
+              ],
+              "alumniOf": "Central Queensland University",
+              "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "NSW",
+                "addressCountry": "AU"
+              }
+            }
+          `}
+        </Script>
+      </head>
       <body className={inter.className}>
         <Navigation />
+        {children}
         
-        <main role="main">
-          {children}
-        </main>
-
-        <footer style={{
-          background: 'var(--grey-900)',
-          color: 'var(--grey-400)',
-          padding: 'var(--space-2xl) 0',
-          marginTop: 'var(--space-3xl)'
-        }}>
-          <div className="container">
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-              gap: 'var(--space-xl)',
-              marginBottom: 'var(--space-xl)'
-            }}>
-              <div>
-                <h3 style={{ 
-                  color: 'var(--primary-400)', 
-                  marginBottom: 'var(--space-md)',
-                  fontSize: '1.125rem'
-                }}>
-                  Data Portfolio
-                </h3>
-                <p style={{ fontSize: '0.95rem', lineHeight: 1.6 }}>
-                  Showcasing advanced analytics, statistical modelling, and data visualisation 
-                  projects for the Australian data science community.
-                </p>
-              </div>
-              
-              <div>
-                <h4 style={{ 
-                  color: 'white', 
-                  marginBottom: 'var(--space-md)',
-                  fontSize: '1rem'
-                }}>
-                  Featured Projects
-                </h4>
-                <ul style={{ listStyle: 'none', fontSize: '0.9rem' }}>
-                  <li style={{ marginBottom: 'var(--space-xs)' }}>
-                    <a href="/projects/arts-employment" style={{ 
-                      color: 'var(--grey-400)', 
-                      textDecoration: 'none',
-                      transition: 'color 0.2s ease'
-                    }}
-                    className="footer-link"
-                    >
-                      🎭 Arts Employment Recovery Analysis
-                    </a>
-                  </li>
-                  <li style={{ marginBottom: 'var(--space-xs)' }}>
-                    <span style={{ color: 'var(--grey-500)' }}>
-                      📊 More projects coming soon
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 style={{ 
-                  color: 'white', 
-                  marginBottom: 'var(--space-md)',
-                  fontSize: '1rem'
-                }}>
-                  Connect
-                </h4>
-                <div style={{ 
-                  display: 'flex', 
-                  gap: 'var(--space-md)',
-                  flexWrap: 'wrap'
-                }}>
-                  <a 
-                    href="https://linkedin.com/in/jessferraro" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ 
-                      color: 'var(--grey-400)', 
-                      textDecoration: 'none',
-                      padding: 'var(--space-xs)',
-                      borderRadius: 'var(--border-radius)',
-                      transition: 'all 0.2s ease'
-                    }}
-                    className="footer-link"
-                  >
-                    LinkedIn
-                  </a>
-                  <a 
-                    href="https://github.com/jess-ferraro-data" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ 
-                      color: 'var(--grey-400)', 
-                      textDecoration: 'none',
-                      padding: 'var(--space-xs)',
-                      borderRadius: 'var(--border-radius)',
-                      transition: 'all 0.2s ease'
-                    }}
-                    className="footer-link"
-                  >
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
+        {/* Event tracking script */}
+        <Script id="custom-analytics" strategy="afterInteractive">
+          {`
+            // Custom event tracking
+            function trackEvent(eventName, parameters = {}) {
+              gtag(&apos;event&apos;, eventName, {
+                custom_parameter: parameters,
+                page_title: document.title,
+                page_location: window.location.href
+              });
+            }
             
-            <div style={{
-              paddingTop: 'var(--space-lg)',
-              borderTop: '1px solid var(--grey-800)',
-              textAlign: 'center',
-              fontSize: '0.875rem',
-              color: 'var(--grey-500)'
-            }}>
-              <p>
-                © {new Date().getFullYear()} Jess Ferraro. Built with Next.js for the Australian data community.
-              </p>
-            </div>
-          </div>
-        </footer>
+            // Track project views
+            function trackProjectView(projectName) {
+              gtag(&apos;event&apos;, &apos;project_view&apos;, {
+                project_name: projectName,
+                engagement_time_msec: Date.now()
+              });
+            }
+            
+            // Track downloads
+            function trackDownload(fileName, fileType) {
+              gtag(&apos;event&apos;, &apos;file_download&apos;, {
+                file_name: fileName,
+                file_type: fileType
+              });
+            }
+            
+            // Track external links
+            document.addEventListener(&apos;click&apos;, function(e) {
+              if (e.target.tagName === &apos;A&apos; && e.target.href) {
+                const url = new URL(e.target.href);
+                if (url.hostname !== window.location.hostname) {
+                  gtag(&apos;event&apos;, &apos;click&apos;, {
+                    event_category: &apos;external_link&apos;,
+                    event_label: url.hostname,
+                    transport_type: &apos;beacon&apos;
+                  });
+                }
+              }
+            });
+          `}
+        </Script>
       </body>
     </html>
   )
