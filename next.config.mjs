@@ -1,25 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Static export for Cloudflare Pages
-  output: 'export',
+  // Remove static export temporarily to test
+  // output: 'export',
   
-  // Add trailing slashes for static hosting
-  trailingSlash: true,
-  
-  // Optimize images for static hosting
+  // Keep image optimization disabled
   images: {
     unoptimized: true
   },
   
   // Disable webpack cache to avoid large files
   webpack: (config) => {
-    // Disable webpack cache for smaller builds
     config.cache = false
     return config
   },
   
   // Disable unnecessary headers
   poweredByHeader: false,
+  
+  // Add trailing slashes
+  trailingSlash: true,
 }
 
 export default nextConfig
