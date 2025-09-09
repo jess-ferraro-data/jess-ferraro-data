@@ -1,24 +1,27 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove static export temporarily to test
-  // output: 'export',
+  // Static export - creates files in 'out' directory
+  output: 'export',
   
-  // Keep image optimization disabled
+  // Essential for static hosting
+  trailingSlash: true,
+  
+  // Disable image optimization for static export
   images: {
     unoptimized: true
   },
   
-  // Disable webpack cache to avoid large files
+  // Disable webpack cache
   webpack: (config) => {
     config.cache = false
     return config
   },
   
-  // Disable unnecessary headers
-  poweredByHeader: false,
+  // Clean URLs for static hosting
+  assetPrefix: '',
   
-  // Add trailing slashes
-  trailingSlash: true,
+  // Disable server features
+  poweredByHeader: false,
 }
 
 export default nextConfig
