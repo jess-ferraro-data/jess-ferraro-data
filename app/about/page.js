@@ -59,7 +59,7 @@ export default function AboutPage() {
               <p style={{ marginBottom: '1.5rem' }}>
                 What drives my analytical approach is a combination of curiosity and neurodivergent thinking. 
                 Being autistic and having ADHD means I need to understand the <em>why</em> behind results and outcomes. 
-                While the world isn&apos;t as black and white as I'd sometimes prefer, diving into data to uncover 
+                While the world isn&apos;t as black and white as I&apos;d sometimes prefer, diving into data to uncover 
                 deeper understanding is incredibly satisfying. I love problem-solving, and data provides the 
                 perfect playground for that passion.
               </p>
