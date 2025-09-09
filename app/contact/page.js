@@ -14,7 +14,7 @@ export default function ContactPage() {
             marginBottom: '1.5rem', 
             lineHeight: 1.1 
           }}>
-            Let's Connect
+            Let&apos;s Connect
           </h1>
           <p style={{ 
             fontSize: '1.25rem', 
@@ -22,7 +22,7 @@ export default function ContactPage() {
             opacity: 0.9, 
             lineHeight: 1.6 
           }}>
-            Ready to discuss data analytics opportunities? I'd love to hear about your project or explore potential collaborations.
+            Ready to discuss data analytics opportunities? I&apos;d love to hear about your project or explore potential collaborations.
           </p>
         </div>
       </section>
@@ -233,7 +233,7 @@ export default function ContactPage() {
               marginBottom: '2rem', 
               color: '#0f766e' 
             }}>
-              Let's Start the Conversation
+              Let&apos;s Start the Conversation
             </h2>
             
             <div style={{
@@ -267,7 +267,7 @@ export default function ContactPage() {
               lineHeight: 1.6,
               marginBottom: '2rem'
             }}>
-              I'm always interested in discussing data analytics opportunities and sharing insights about workforce trends. 
+              I&apos;m always interested in discussing data analytics opportunities and sharing insights about workforce trends. 
               Connect with me on LinkedIn for the fastest response!
             </p>
 

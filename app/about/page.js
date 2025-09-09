@@ -65,7 +65,7 @@ export default function AboutPage() {
               </p>
               
               <p style={{ marginBottom: '1.5rem' }}>
-                Today, I'm a Data Analyst Intern at EY, bringing together my customer service background, 
+                Today, I&apos;m a Data Analyst Intern at EY, bringing together my customer service background, 
                 technical skills, and voracious appetite for learning. My academic foundation includes 
                 a BA in Media & Communications with a minor in Music, and an MSc in Digital Media, while my 
                 data skills come from on-the-job experience and continuous learning through platforms like Coursera and Udemy.
@@ -319,7 +319,7 @@ export default function AboutPage() {
             lineHeight: 1.6
           }}>
             Whether you need workforce analytics, customer insights, or someone who can find 
-            the human story in complex datasets, I'd love to discuss how my unique background 
+            the human story in complex datasets, I&apos;d love to discuss how my unique background 
             can add value to your team.
           </p>
           
