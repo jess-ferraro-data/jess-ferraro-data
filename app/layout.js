@@ -5,9 +5,57 @@ import Navigation from './components/Navigation'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Jess Ferraro - Data Portfolio',
+  title: {
+    template: '%s | Jess Ferraro - Data Portfolio',
+    default: 'Jess Ferraro - Data Portfolio'
+  },
   description: 'Data Analyst & Scientist showcasing advanced analytics and visualisation projects',
-  keywords: 'data analyst, data scientist, portfolio, python, data visualisation, statistics',
+  keywords: [
+    'data analyst',
+    'data scientist', 
+    'workforce analytics',
+    'Australian employment data',
+    'ABS data analysis',
+    'Python data analysis',
+    'employment recovery',
+    'arts industry analysis',
+    'Central Coast NSW',
+    'EY data analyst'
+  ].join(', '),
+  authors: [{ name: 'Jess Ferraro' }],
+  creator: 'Jess Ferraro',
+  publisher: 'Jess Ferraro',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_AU',
+    url: 'https://www.jessferraro.com',
+    siteName: 'Jess Ferraro - Data Portfolio',
+    title: 'Jess Ferraro - Data Analyst & Scientist Portfolio',
+    description: 'Specialising in workforce analytics and Australian employment data insights.',
+    images: [
+      {
+        url: '/og-image.jpg', // You'll need to create this
+        width: 1200,
+        height: 630,
+        alt: 'Jess Ferraro - Data Analyst Portfolio',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://jessferraro.com',
+  },
+  category: 'Data Analytics',
 }
 
 export default function RootLayout({ children }) {

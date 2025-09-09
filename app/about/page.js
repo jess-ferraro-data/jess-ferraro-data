@@ -59,7 +59,7 @@ export default function AboutPage() {
               <p style={{ marginBottom: '1.5rem' }}>
                 What drives my analytical approach is a combination of curiosity and neurodivergent thinking. 
                 Being autistic and having ADHD means I need to understand the <em>why</em> behind results and outcomes. 
-                While the world isn't as black and white as I'd sometimes prefer, diving into data to uncover 
+                While the world isn&apos;t as black and white as I'd sometimes prefer, diving into data to uncover 
                 deeper understanding is incredibly satisfying. I love problem-solving, and data provides the 
                 perfect playground for that passion.
               </p>
@@ -290,8 +290,8 @@ export default function AboutPage() {
                 textAlign: 'left'
               }}>
                 I believe that behind every data point is a human story. Whether analysing employment 
-                trends in Australia's arts sector or diving into workforce analytics, my focus is always 
-                on understanding the <em>people</em> factor. Data isn't just numbers—it's a window into 
+                trends in Australia&apos;s arts sector or diving into workforce analytics, my focus is always 
+                on understanding the <em>people</em> factor. Data isn&apos;t just numbers—it&apos;s a window into 
                 human experiences, challenges, and opportunities. That perspective, combined with my 
                 neurodivergent analytical strengths and customer service background, allows me to find 
                 insights that others might miss.
@@ -310,7 +310,7 @@ export default function AboutPage() {
             marginBottom: '1rem', 
             color: 'white' 
           }}>
-            Let's Explore Data Together
+            Let&apos;s Explore Data Together
           </h2>
           <p style={{ 
             fontSize: '1.125rem', 
