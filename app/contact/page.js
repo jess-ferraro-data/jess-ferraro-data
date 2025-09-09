@@ -1,37 +1,4 @@
-'use client'
-
-import { useState } from 'react'
-
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    message: '',
-    projectType: ''
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [showSuccess, setShowSuccess] = useState(false)
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
-    // Simulate form submission - replace with your actual form handling
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setShowSuccess(true)
-      setFormData({ name: '', email: '', company: '', message: '', projectType: '' })
-    }, 1000)
-  }
-
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
-
   return (
     <main style={{ background: '#115e59', minHeight: '100vh', color: 'white' }}>
       {/* Hero Section */}
@@ -47,7 +14,7 @@ export default function ContactPage() {
             marginBottom: '1.5rem', 
             lineHeight: 1.1 
           }}>
-            Let's Start a Conversation
+            Let's Connect
           </h1>
           <p style={{ 
             fontSize: '1.25rem', 
@@ -55,69 +22,72 @@ export default function ContactPage() {
             opacity: 0.9, 
             lineHeight: 1.6 
           }}>
-            Whether you need data insights, workforce analytics, or want to discuss a potential collaboration, 
-            I'd love to hear from you.
+            Ready to discuss data analytics opportunities? I'd love to hear about your project or explore potential collaborations.
           </p>
         </div>
       </section>
 
-      {/* Contact Options */}
+      {/* Main Contact Options */}
       <section style={{ padding: '4rem 0', background: '#0f766e' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 2rem' }}>
+          
+          {/* Primary Contact - LinkedIn */}
+          <div style={{
+            background: 'rgba(255, 255, 255, 0.95)',
+            borderRadius: '1rem',
+            padding: '3rem',
+            color: '#1f2937',
+            textAlign: 'center',
+            marginBottom: '3rem',
+            border: '3px solid #0077b5'
+          }}>
+            <div style={{ fontSize: '4rem', marginBottom: '1.5rem' }}>💼</div>
+            <h2 style={{ 
+              fontSize: '2rem', 
+              fontWeight: 'bold', 
+              marginBottom: '1rem', 
+              color: '#0077b5' 
+            }}>
+              Professional Networking
+            </h2>
+            <p style={{ 
+              color: '#6b7280', 
+              marginBottom: '2rem', 
+              fontSize: '1.125rem',
+              lineHeight: 1.6,
+              maxWidth: '600px',
+              margin: '0 auto 2rem'
+            }}>
+              Connect with me on LinkedIn to discuss data analytics opportunities, view my professional background, 
+              and see recommendations from colleagues and clients.
+            </p>
+            <a 
+              href="https://linkedin.com/in/jessferraro" 
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                background: '#0077b5',
+                color: 'white',
+                padding: '1rem 2rem',
+                borderRadius: '0.75rem',
+                textDecoration: 'none',
+                fontWeight: 600,
+                fontSize: '1.125rem',
+                display: 'inline-block',
+                transition: 'all 0.2s ease',
+                boxShadow: '0 4px 15px rgba(0, 119, 181, 0.3)'
+              }}
+            >
+              📱 Connect on LinkedIn
+            </a>
+          </div>
+
+          {/* Secondary Contact Options */}
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '2rem',
-            marginBottom: '4rem'
+            gap: '2rem'
           }}>
-            
-            {/* Quick Connect */}
-            <div style={{
-              background: 'rgba(255, 255, 255, 0.95)',
-              borderRadius: '1rem',
-              padding: '2rem',
-              color: '#1f2937',
-              textAlign: 'center'
-            }}>
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>💼</div>
-              <h3 style={{ 
-                fontSize: '1.5rem', 
-                fontWeight: 'bold', 
-                marginBottom: '1rem', 
-                color: '#0f766e' 
-              }}>
-                Professional Network
-              </h3>
-              <p style={{ color: '#6b7280', marginBottom: '1.5rem' }}>
-                Connect with me on LinkedIn for professional networking and to see my latest projects.
-              </p>
-              <a 
-                href="https://linkedin.com/in/jessferraro" 
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  background: '#0077b5',
-                  color: 'white',
-                  padding: '0.75rem 1.5rem',
-                  borderRadius: '0.5rem',
-                  textDecoration: 'none',
-                  fontWeight: 600,
-                  display: 'inline-block',
-                  transition: 'all 0.2s ease'
-                }}
-              >
-                View LinkedIn Profile
-              </a>
-            </div>
-
-            {/* Email Contact */}
-            <div style={{
-              background: 'rgba(255, 255, 255, 0.95)',
-              borderRadius: '1rem',
-              padding: '2rem',
-              color: '#1f2937',
-              textAlign: 'center'
-            }}>
 
             {/* GitHub */}
             <div style={{
@@ -134,10 +104,10 @@ export default function ContactPage() {
                 marginBottom: '1rem', 
                 color: '#0f766e' 
               }}>
-                Code Repository
+                Technical Portfolio
               </h3>
               <p style={{ color: '#6b7280', marginBottom: '1.5rem' }}>
-                Explore my code, methodologies, and technical implementations on GitHub.
+                Review my code, methodologies, and technical implementations.
               </p>
               <a 
                 href="https://github.com/jess-ferraro-data" 
@@ -158,296 +128,167 @@ export default function ContactPage() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Contact Form */}
-          <div style={{
-            background: 'rgba(255, 255, 255, 0.95)',
-            borderRadius: '1rem',
-            padding: '3rem',
-            color: '#1f2937',
-            maxWidth: '800px',
-            margin: '0 auto'
+      {/* Why Connect Section */}
+      <section style={{ padding: '4rem 0', background: '#134e4a' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 2rem' }}>
+          <h2 style={{ 
+            fontSize: '2rem', 
+            fontWeight: 'bold', 
+            textAlign: 'center', 
+            marginBottom: '3rem', 
+            color: 'white' 
           }}>
-            <h2 style={{ 
-              fontSize: '2rem', 
-              fontWeight: 'bold', 
-              marginBottom: '1rem', 
-              color: '#0f766e',
-              textAlign: 'center' 
+            What Can We Discuss?
+          </h2>
+          
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '2rem'
+          }}>
+            
+            <div style={{
+              background: 'rgba(255, 255, 255, 0.05)',
+              borderRadius: '1rem',
+              padding: '2rem',
+              textAlign: 'center',
+              border: '1px solid rgba(255, 255, 255, 0.1)'
             }}>
-              Project Enquiry Form
-            </h2>
-            <p style={{ 
-              textAlign: 'center', 
-              color: '#6b7280', 
-              marginBottom: '2rem' 
+              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>📊</div>
+              <h3 style={{ color: '#a7f3d0', marginBottom: '1rem', fontSize: '1.25rem', fontWeight: 'bold' }}>
+                Data Analytics Projects
+              </h3>
+              <p style={{ color: '#ccfbf1', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                Workforce analytics, industry analysis, economic impact assessment, and policy-relevant research.
+              </p>
+            </div>
+
+            <div style={{
+              background: 'rgba(255, 255, 255, 0.05)',
+              borderRadius: '1rem',
+              padding: '2rem',
+              textAlign: 'center',
+              border: '1px solid rgba(255, 255, 255, 0.1)'
             }}>
-              Tell me about your data challenge and I'll get back to you as soon as possible.
-            </p>
+              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🤝</div>
+              <h3 style={{ color: '#a7f3d0', marginBottom: '1rem', fontSize: '1.25rem', fontWeight: 'bold' }}>
+                Collaboration Opportunities
+              </h3>
+              <p style={{ color: '#ccfbf1', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                Freelance projects, consulting work, or full-time opportunities in data analytics and insights.
+              </p>
+            </div>
 
-            {showSuccess ? (
-              <div style={{
-                background: '#f0fdf4',
-                border: '1px solid #22c55e',
-                borderRadius: '0.5rem',
-                padding: '2rem',
-                textAlign: 'center'
-              }}>
-                <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>✅</div>
-                <h3 style={{ color: '#16a34a', marginBottom: '1rem' }}>Message Sent Successfully!</h3>
-                <p style={{ color: '#15803d' }}>
-                  Thanks for reaching out. I'll review your enquiry and get back to you as soon as possible.
-                </p>
-                <button 
-                  onClick={() => setShowSuccess(false)}
-                  style={{
-                    background: '#22c55e',
-                    color: 'white',
-                    padding: '0.5rem 1rem',
-                    borderRadius: '0.25rem',
-                    border: 'none',
-                    marginTop: '1rem',
-                    cursor: 'pointer'
-                  }}
-                >
-                  Send Another Message
-                </button>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit}>
-                <div style={{ 
-                  display: 'grid', 
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
-                  gap: '1rem', 
-                  marginBottom: '1rem' 
-                }}>
-                  <div>
-                    <label style={{ 
-                      display: 'block', 
-                      marginBottom: '0.5rem', 
-                      fontWeight: '600',
-                      color: '#374151'
-                    }}>
-                      Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      style={{
-                        width: '100%',
-                        padding: '0.75rem',
-                        border: '1px solid #d1d5db',
-                        borderRadius: '0.5rem',
-                        fontSize: '1rem',
-                        outline: 'none'
-                      }}
-                      placeholder="Your full name"
-                    />
-                  </div>
+            <div style={{
+              background: 'rgba(255, 255, 255, 0.05)',
+              borderRadius: '1rem',
+              padding: '2rem',
+              textAlign: 'center',
+              border: '1px solid rgba(255, 255, 255, 0.1)'
+            }}>
+              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🎓</div>
+              <h3 style={{ color: '#a7f3d0', marginBottom: '1rem', fontSize: '1.25rem', fontWeight: 'bold' }}>
+                Knowledge Sharing
+              </h3>
+              <p style={{ color: '#ccfbf1', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                Methodology discussions, technical questions, or sharing insights about Australian employment data.
+              </p>
+            </div>
 
-                  <div>
-                    <label style={{ 
-                      display: 'block', 
-                      marginBottom: '0.5rem', 
-                      fontWeight: '600',
-                      color: '#374151'
-                    }}>
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      style={{
-                        width: '100%',
-                        padding: '0.75rem',
-                        border: '1px solid #d1d5db',
-                        borderRadius: '0.5rem',
-                        fontSize: '1rem',
-                        outline: 'none'
-                      }}
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-                </div>
-
-                <div style={{ 
-                  display: 'grid', 
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
-                  gap: '1rem', 
-                  marginBottom: '1rem' 
-                }}>
-                  <div>
-                    <label style={{ 
-                      display: 'block', 
-                      marginBottom: '0.5rem', 
-                      fontWeight: '600',
-                      color: '#374151'
-                    }}>
-                      Organisation
-                    </label>
-                    <input
-                      type="text"
-                      name="company"
-                      value={formData.company}
-                      onChange={handleInputChange}
-                      style={{
-                        width: '100%',
-                        padding: '0.75rem',
-                        border: '1px solid #d1d5db',
-                        borderRadius: '0.5rem',
-                        fontSize: '1rem',
-                        outline: 'none'
-                      }}
-                      placeholder="Your company or organisation"
-                    />
-                  </div>
-
-                  <div>
-                    <label style={{ 
-                      display: 'block', 
-                      marginBottom: '0.5rem', 
-                      fontWeight: '600',
-                      color: '#374151'
-                    }}>
-                      Project Type
-                    </label>
-                    <select
-                      name="projectType"
-                      value={formData.projectType}
-                      onChange={handleInputChange}
-                      style={{
-                        width: '100%',
-                        padding: '0.75rem',
-                        border: '1px solid #d1d5db',
-                        borderRadius: '0.5rem',
-                        fontSize: '1rem',
-                        outline: 'none',
-                        background: 'white'
-                      }}
-                    >
-                      <option value="">Select project type</option>
-                      <option value="workforce-analytics">Workforce Analytics</option>
-                      <option value="industry-analysis">Industry Analysis</option>
-                      <option value="data-visualisation">Data Visualisation</option>
-                      <option value="api-integration">API Integration</option>
-                      <option value="consulting">Data Consulting</option>
-                      <option value="collaboration">Collaboration</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div style={{ marginBottom: '2rem' }}>
-                  <label style={{ 
-                    display: 'block', 
-                    marginBottom: '0.5rem', 
-                    fontWeight: '600',
-                    color: '#374151'
-                  }}>
-                    Message *
-                  </label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                    rows={5}
-                    style={{
-                      width: '100%',
-                      padding: '0.75rem',
-                      border: '1px solid #d1d5db',
-                      borderRadius: '0.5rem',
-                      fontSize: '1rem',
-                      outline: 'none',
-                      resize: 'vertical'
-                    }}
-                    placeholder="Tell me about your project, data challenge, or how I can help..."
-                  />
-                </div>
-
-                <div style={{ textAlign: 'center' }}>
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    style={{
-                      background: isSubmitting ? '#9ca3af' : '#0f766e',
-                      color: 'white',
-                      padding: '1rem 2rem',
-                      borderRadius: '0.5rem',
-                      border: 'none',
-                      fontSize: '1rem',
-                      fontWeight: '600',
-                      cursor: isSubmitting ? 'not-allowed' : 'pointer',
-                      transition: 'all 0.2s ease'
-                    }}
-                  >
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
-                  </button>
-                </div>
-              </form>
-            )}
+            <div style={{
+              background: 'rgba(255, 255, 255, 0.05)',
+              borderRadius: '1rem',
+              padding: '2rem',
+              textAlign: 'center',
+              border: '1px solid rgba(255, 255, 255, 0.1)'
+            }}>
+              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🎭</div>
+              <h3 style={{ color: '#a7f3d0', marginBottom: '1rem', fontSize: '1.25rem', fontWeight: 'bold' }}>
+                Arts & Culture Analytics
+              </h3>
+              <p style={{ color: '#ccfbf1', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                Creative industry analysis, cultural sector insights, and arts policy research projects.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Location & Availability */}
-      <section style={{ padding: '4rem 0', background: '#134e4a' }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 2rem' }}>
+      {/* Location & Response Time */}
+      <section style={{ padding: '4rem 0', background: '#0f766e' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 2rem' }}>
           <div style={{
-            background: 'rgba(255, 255, 255, 0.05)',
+            background: 'rgba(255, 255, 255, 0.95)',
             borderRadius: '1rem',
             padding: '3rem',
             textAlign: 'center',
-            border: '1px solid rgba(255, 255, 255, 0.1)'
+            color: '#1f2937'
           }}>
             <h2 style={{ 
               fontSize: '2rem', 
               fontWeight: 'bold', 
               marginBottom: '2rem', 
-              color: 'white' 
+              color: '#0f766e' 
             }}>
-              Availability & Location
+              Let's Start the Conversation
             </h2>
             
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
               gap: '2rem',
               marginBottom: '2rem'
             }}>
-              <div>
-                <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🌊</div>
-                <h3 style={{ color: '#a7f3d0', marginBottom: '0.5rem' }}>Based in</h3>
-                <p style={{ color: '#ccfbf1' }}>Central Coast, NSW</p>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🌊</div>
+                <h3 style={{ color: '#0f766e', marginBottom: '0.5rem', fontWeight: 'bold' }}>Location</h3>
+                <p style={{ color: '#6b7280' }}>Central Coast, NSW</p>
               </div>
               
-              <div>
-                <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>💼</div>
-                <h3 style={{ color: '#a7f3d0', marginBottom: '0.5rem' }}>Current Role</h3>
-                <p style={{ color: '#ccfbf1' }}>Data Analyst Intern at EY</p>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>💼</div>
+                <h3 style={{ color: '#0f766e', marginBottom: '0.5rem', fontWeight: 'bold' }}>Current Role</h3>
+                <p style={{ color: '#6b7280' }}>Data Analyst Intern at EY</p>
               </div>
               
-              <div>
-                <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>📅</div>
-                <h3 style={{ color: '#a7f3d0', marginBottom: '0.5rem' }}>Availability</h3>
-                <p style={{ color: '#ccfbf1' }}>Open to freelance projects</p>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>⚡</div>
+                <h3 style={{ color: '#0f766e', marginBottom: '0.5rem', fontWeight: 'bold' }}>Response Time</h3>
+                <p style={{ color: '#6b7280' }}>Within 24-48 hours</p>
               </div>
             </div>
             
             <p style={{ 
-              color: '#a7f3d0', 
+              color: '#6b7280', 
               fontSize: '1.125rem',
-              lineHeight: 1.6
+              lineHeight: 1.6,
+              marginBottom: '2rem'
             }}>
-              I typically respond to enquiries within 24 hours. For urgent projects or 
-              time-sensitive data analysis needs, please mention this in your message.
+              I'm always interested in discussing data analytics opportunities and sharing insights about workforce trends. 
+              Connect with me on LinkedIn for the fastest response!
             </p>
+
+            <a 
+              href="https://linkedin.com/in/jessferraro" 
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                background: '#0077b5',
+                color: 'white',
+                padding: '1rem 2rem',
+                borderRadius: '0.75rem',
+                textDecoration: 'none',
+                fontWeight: 600,
+                fontSize: '1.125rem',
+                display: 'inline-block',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              💼 Connect Now
+            </a>
           </div>
         </div>
       </section>
@@ -459,12 +300,20 @@ export default function ContactPage() {
 // METADATA FOR SEO
 // =============================================================================
 export const metadata = {
-  title: 'Contact | Jess Ferraro - Data Analyst',
-  description: 'Get in touch for data analytics projects, workforce insights, or collaboration opportunities. Based on Central Coast NSW, available for freelance projects.',
-  keywords: 'contact data analyst, hire data analyst Central Coast, workforce analytics freelance, data consulting NSW',
+  title: 'Contact',
+  description: 'Connect with Jess Ferraro for data analytics opportunities, workforce insights, and collaboration. Based on Central Coast NSW, specialising in Australian employment data.',
+  keywords: 'contact data analyst, Jess Ferraro LinkedIn, data analytics Central Coast, workforce analytics specialist, Australian employment data expert',
   openGraph: {
     title: 'Contact | Jess Ferraro - Data Analyst',
-    description: 'Get in touch for data analytics projects and workforce insights.',
-    type: 'website'
-  }
+    description: 'Connect for data analytics opportunities and workforce insights.',
+    url: 'https://jessferraro.com/contact',
+    images: [
+      {
+        url: '/og-contact.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Jess Ferraro - Data Analytics Services',
+      },
+    ],
+  },
 }
