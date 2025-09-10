@@ -6,45 +6,143 @@ export default function TimelineChart() {
   const chartRef = useRef(null)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState(null)
+  const [dataSource, setDataSource] = useState('loading')
+
+  // Your actual CSV data embedded as fallback
+  const fallbackTimelineData = [
+    { quarter: '2019-Q1', value: -3.461673954235 },
+    { quarter: '2019-Q1', value: 1.526308907985 },
+    { quarter: '2019-Q2', value: 4.100008421607 },
+    { quarter: '2019-Q2', value: 1.911836352471 },
+    { quarter: '2019-Q3', value: 1.877252252107 },
+    { quarter: '2019-Q3', value: 2.076369888656 },
+    { quarter: '2019-Q4', value: 0.888786671228 },
+    { quarter: '2019-Q4', value: 3.198899655298 },
+    { quarter: '2020-Q1', value: -3.841130937571 },
+    { quarter: '2020-Q1', value: -0.395015216318 },
+    { quarter: '2020-Q2', value: -15.492886127534 },
+    { quarter: '2020-Q2', value: -15.471201760077 },
+    { quarter: '2020-Q3', value: 4.890666354404 },
+    { quarter: '2020-Q3', value: 2.559287641133 },
+    { quarter: '2020-Q4', value: 2.599340295429 },
+    { quarter: '2020-Q4', value: 2.414478127414 },
+    { quarter: '2021-Q1', value: -0.596710782911 },
+    { quarter: '2021-Q1', value: 0.591552377125 },
+    { quarter: '2021-Q2', value: -0.227840124087 },
+    { quarter: '2021-Q2', value: -1.466372062246 },
+    { quarter: '2021-Q3', value: -1.611303226651 },
+    { quarter: '2021-Q3', value: -10.967537497674 },
+    { quarter: '2021-Q4', value: 0.115023258387 },
+    { quarter: '2021-Q4', value: 7.58426548357 },
+    { quarter: '2022-Q1', value: 5.629639379972 },
+    { quarter: '2022-Q1', value: 2.654374305493 },
+    { quarter: '2022-Q2', value: 13.756169726651 },
+    { quarter: '2022-Q2', value: 3.542883456095 },
+    { quarter: '2022-Q3', value: -6.660909715016 },
+    { quarter: '2022-Q3', value: 2.140214917704 },
+    { quarter: '2022-Q4', value: 2.049515379216 },
+    { quarter: '2022-Q4', value: -0.122531362065 },
+    { quarter: '2023-Q1', value: 3.540352436899 },
+    { quarter: '2023-Q1', value: 4.486571086514 },
+    { quarter: '2023-Q2', value: 5.895553233641 },
+    { quarter: '2023-Q2', value: 9.470612512284 },
+    { quarter: '2023-Q3', value: 5.71525077257 },
+    { quarter: '2023-Q3', value: 4.415893538134 },
+    { quarter: '2023-Q4', value: 1.17940829608 },
+    { quarter: '2023-Q4', value: 2.734734185789 },
+    { quarter: '2024-Q1', value: -1.110228305215 },
+    { quarter: '2024-Q1', value: 3.33819137578 },
+    { quarter: '2024-Q2', value: -7.958469925978 },
+    { quarter: '2024-Q2', value: -3.55248783891 },
+    { quarter: '2024-Q3', value: -3.366356064472 },
+    { quarter: '2024-Q3', value: -3.281125739653 },
+    { quarter: '2024-Q4', value: 0.18600057622 },
+    { quarter: '2024-Q4', value: -1.402808651437 }
+  ]
 
   useEffect(() => {
     const loadDataAndCreateChart = async () => {
       try {
         const Plotly = (await import('plotly.js-dist-min')).default
-        const Papa = (await import('papaparse')).default
         
         setIsLoading(true)
         
-        // Load your timeline data
-        const response = await fetch('/data/timeline_data_m62.csv')
-        if (!response.ok) {
-          throw new Error(`Failed to load timeline CSV: ${response.status}`)
+        let rawTimelineData
+        let dataSource = 'fallback'
+        
+        // Try to load actual CSV data first
+        try {
+          const Papa = (await import('papaparse')).default
+          
+          // Try multiple potential paths for production builds
+          const possiblePaths = [
+            '/data/timeline_data_m62.csv',
+            './data/timeline_data_m62.csv',
+            '/public/data/timeline_data_m62.csv',
+            `${process.env.NODE_ENV === 'production' ? '' : ''}/data/timeline_data_m62.csv`
+          ]
+          
+          let csvData = null
+          for (const path of possiblePaths) {
+            try {
+              const response = await fetch(path)
+              if (response.ok) {
+                csvData = await response.text()
+                console.log(`✅ CSV loaded from: ${path}`)
+                dataSource = 'csv'
+                break
+              }
+            } catch (pathError) {
+              console.log(`❌ Path failed: ${path}`)
+              continue
+            }
+          }
+          
+          if (csvData) {
+            const parsedData = Papa.parse(csvData, {
+              header: true,
+              dynamicTyping: true,
+              skipEmptyLines: true
+            })
+            
+            rawTimelineData = parsedData.data
+              .map(row => ({
+                quarter: row.TIME_PERIOD,
+                value: row.OBS_VALUE
+              }))
+              .filter(row => row.quarter && row.value !== null && row.value !== undefined)
+            
+            console.log(`✅ Using CSV data: ${rawTimelineData.length} points`)
+          } else {
+            throw new Error('No valid CSV path found')
+          }
+          
+        } catch (csvError) {
+          console.log('📊 CSV loading failed, using embedded fallback data')
+          rawTimelineData = fallbackTimelineData
+          dataSource = 'fallback'
         }
+
+        // Process the data - handle duplicates by averaging or taking first value
+        const quarterMap = new Map()
         
-        const csvText = await response.text()
-        
-        // Parse CSV with your exact column names
-        const parsedData = Papa.parse(csvText, {
-          header: true,
-          dynamicTyping: true,
-          skipEmptyLines: true
+        rawTimelineData.forEach(item => {
+          if (!quarterMap.has(item.quarter)) {
+            quarterMap.set(item.quarter, [])
+          }
+          quarterMap.get(item.quarter).push(item.value)
         })
         
-        if (parsedData.errors.length > 0) {
-          console.warn('CSV parsing warnings:', parsedData.errors)
-        }
-
-        // Extract and clean your data
-        const timelineData = parsedData.data
-          .map(row => ({
-            quarter: row.TIME_PERIOD,
-            value: row.OBS_VALUE
+        // Create final dataset - average duplicate quarters
+        const processedData = Array.from(quarterMap.entries())
+          .map(([quarter, values]) => ({
+            quarter,
+            value: values.reduce((sum, val) => sum + val, 0) / values.length // Average
           }))
-          .filter(row => row.quarter && row.value !== null && row.value !== undefined)
-          .sort((a, b) => a.quarter.localeCompare(b.quarter)) // Sort chronologically
+          .sort((a, b) => a.quarter.localeCompare(b.quarter))
 
-        const quarters = timelineData.map(d => d.quarter)
-        const values = timelineData.map(d => d.value)
+        const quarters = processedData.map(d => d.quarter)
+        const values = processedData.map(d => d.value)
 
         // Color code the line based on periods
         const markerColors = values.map((val, i) => {
@@ -86,7 +184,7 @@ export default function TimelineChart() {
 
         const layout = {
           title: {
-            text: '<b>Arts Employment Changes: 2019-2024</b><br><sub>Employment percentage changes 2019-2024</sub>',
+            text: '<b>Arts Employment Changes: 2019-2024</b><br><sub>Employment percentage changes (quarterly)</sub>',
             x: 0.5,
             font: { size: 18, color: '#1f2937' }
           },
@@ -161,7 +259,7 @@ export default function TimelineChart() {
               bordercolor: '#22c55e',
               borderwidth: 1
             } : null
-          ].filter(Boolean) // Remove null annotations
+          ].filter(Boolean)
         }
 
         const config = {
@@ -179,11 +277,12 @@ export default function TimelineChart() {
         }
 
         Plotly.newPlot(chartRef.current, [trace], layout, config)
+        setDataSource(dataSource)
         setIsLoading(false)
 
       } catch (err) {
         console.error('Timeline chart error:', err)
-        setError(`Failed to load timeline data: ${err.message}`)
+        setError(`Failed to load timeline: ${err.message}`)
         setIsLoading(false)
       }
     }
@@ -202,8 +301,6 @@ export default function TimelineChart() {
         margin: '2rem 0'
       }}>
         <strong>⚠️ Timeline Error:</strong> {error}
-        <br />
-        <small>Make sure timeline_data_m62.csv is in the public/data/ folder</small>
       </div>
     )
   }
@@ -226,16 +323,33 @@ export default function TimelineChart() {
       <div ref={chartRef} style={{ width: '100%' }} />
       {!isLoading && !error && (
         <div>
+          {/* Data source indicator */}
+          {dataSource === 'fallback' && (
+            <div style={{
+              background: '#fef3c7',
+              border: '1px solid #f59e0b',
+              borderRadius: '0.5rem',
+              padding: '1rem',
+              marginTop: '1rem',
+              fontSize: '0.875rem',
+              color: '#92400e'
+            }}>
+              <strong>📊 Using embedded data:</strong> CSV file not accessible in production build. 
+              Chart shows your actual analysis data with duplicate quarters averaged.
+            </div>
+          )}
+          
           <p style={{ 
             textAlign: 'center', 
             marginTop: '1rem', 
             color: '#6b7280', 
             fontSize: '0.875rem' 
           }}>
-            Source: ABS Labour Account M62 (Employed persons - Percentage changes). Interactive chart.
+            Source: ABS Labour Account M62 (Employed persons - Percentage changes). 
+            {dataSource === 'csv' ? 'Loaded from CSV file.' : 'Using embedded data.'} Interactive chart.
           </p>
           
-          {/* Enhanced timeline commentary */}
+          {/* Timeline commentary */}
           <div style={{
             background: '#f0fdfa',
             border: '1px solid #5eead4',
@@ -265,10 +379,10 @@ export default function TimelineChart() {
                 borderLeft: '4px solid #dc2626'
               }}>
                 <div style={{ fontWeight: '600', color: '#dc2626', marginBottom: '0.5rem' }}>
-                  March 2020 - The Lockdown
+                  2020-Q2 - Peak Impact
                 </div>
                 <div style={{ fontSize: '0.875rem', color: '#374151', lineHeight: 1.6 }}>
-                  Theatre doors locked, concert halls went silent, film sets shut down as Australia entered unprecedented restrictions.
+                  Employment reached its lowest point with a -15.5% decline as lockdowns shut down venues nationwide.
                 </div>
               </div>
               
@@ -279,10 +393,10 @@ export default function TimelineChart() {
                 borderLeft: '4px solid #f59e0b'
               }}>
                 <div style={{ fontWeight: '600', color: '#f59e0b', marginBottom: '0.5rem' }}>
-                  2021 - Digital Transformation
+                  2021-2022 - Volatile Recovery
                 </div>
                 <div style={{ fontSize: '0.875rem', color: '#374151', lineHeight: 1.6 }}>
-                  Streaming platforms exploded, virtual events launched, and the creative sector rapidly embraced online delivery.
+                  Recovery showed significant volatility with lockdowns and reopenings creating an unstable employment environment.
                 </div>
               </div>
               
@@ -293,10 +407,10 @@ export default function TimelineChart() {
                 borderLeft: '4px solid #22c55e'
               }}>
                 <div style={{ fontWeight: '600', color: '#22c55e', marginBottom: '0.5rem' }}>
-                  2022-2024 - The Comeback
+                  2023-2024 - Stabilisation
                 </div>
                 <div style={{ fontSize: '0.875rem', color: '#374151', lineHeight: 1.6 }}>
-                  Hybrid models emerged, live events returned with new safety protocols, employment steadily climbed back toward pre-pandemic levels.
+                  Employment changes stabilised around baseline levels, indicating the sector had adapted to new operating conditions.
                 </div>
               </div>
             </div>
