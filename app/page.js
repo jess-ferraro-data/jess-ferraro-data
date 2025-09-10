@@ -68,55 +68,62 @@ export default function Home() {
 
       {/* Skills Showcase */}
       <section style={{ padding: '5rem 0', background: '#134e4a' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '1rem', color: 'white' }}>Core Capabilities</h2>
-          <p style={{ fontSize: '1.125rem', textAlign: 'center', color: '#a7f3d0', marginBottom: '3rem', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
-            Delivering end-to-end data science solutions from API integration to policy recommendations
-          </p>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
+        <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '1rem', color: 'white' }}>Core Capabilities</h2>
+        <p style={{ fontSize: '1.125rem', textAlign: 'center', color: '#a7f3d0', marginBottom: '3rem', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
+          Delivering end-to-end data science solutions from API integration to policy recommendations
+        </p>
+        
+        {/* Updated grid - now explicitly 2x2 on desktop, stacked on mobile */}
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', 
+          gap: '2rem',
+          maxWidth: '900px', // Constrain width to force 2x2 layout
+          margin: '0 auto'
+        }}>
+          <div style={{ background: 'rgba(20, 184, 166, 0.1)', border: '1px solid #14b8a6', borderRadius: '0.75rem', padding: '1.5rem', borderLeft: '4px solid #14b8a6' }}>
+            <div style={{ fontSize: '1.125rem', fontWeight: '600', color: '#5eead4', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              📊 Statistical Analysis
+            </div>
+            <div style={{ fontSize: '0.95rem', lineHeight: 1.6, color: '#a7f3d0' }}>
+              Advanced statistical modelling, trend analysis, and comparative frameworks. 
+              Experienced with regression analysis, time series decomposition, and recovery metrics.
+            </div>
+          </div>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-            <div style={{ background: 'rgba(20, 184, 166, 0.1)', border: '1px solid #14b8a6', borderRadius: '0.75rem', padding: '1.5rem', borderLeft: '4px solid #14b8a6' }}>
-              <div style={{ fontSize: '1.125rem', fontWeight: '600', color: '#5eead4', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                📊 Statistical Analysis
-              </div>
-              <div style={{ fontSize: '0.95rem', lineHeight: 1.6, color: '#a7f3d0' }}>
-                Advanced statistical modelling, trend analysis, and comparative frameworks. 
-                Experienced with regression analysis, time series decomposition, and recovery metrics.
-              </div>
+          <div style={{ background: 'rgba(20, 184, 166, 0.1)', border: '1px solid #14b8a6', borderRadius: '0.75rem', padding: '1.5rem', borderLeft: '4px solid #5eead4' }}>
+            <div style={{ fontSize: '1.125rem', fontWeight: '600', color: '#5eead4', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              🔧 Technical Implementation
             </div>
-            
-            <div style={{ background: 'rgba(20, 184, 166, 0.1)', border: '1px solid #14b8a6', borderRadius: '0.75rem', padding: '1.5rem', borderLeft: '4px solid #5eead4' }}>
-              <div style={{ fontSize: '1.125rem', fontWeight: '600', color: '#5eead4', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                🔧 Technical Implementation
-              </div>
-              <div style={{ fontSize: '0.95rem', lineHeight: 1.6, color: '#a7f3d0' }}>
-                Python (Pandas, NumPy, Plotly), API integration, automated data pipelines, 
-                and interactive visualisation development for web deployment.
-              </div>
+            <div style={{ fontSize: '0.95rem', lineHeight: 1.6, color: '#a7f3d0' }}>
+              Python (Pandas, NumPy, Plotly), API integration, automated data pipelines, 
+              and interactive visualisation development for web deployment.
             </div>
-            
-            <div style={{ background: 'rgba(20, 184, 166, 0.1)', border: '1px solid #14b8a6', borderRadius: '0.75rem', padding: '1.5rem', borderLeft: '4px solid #2dd4bf' }}>
-              <div style={{ fontSize: '1.125rem', fontWeight: '600', color: '#5eead4', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                📈 Business Intelligence
-              </div>
-              <div style={{ fontSize: '0.95rem', lineHeight: 1.6, color: '#a7f3d0' }}>
-                Industry benchmarking, economic impact assessment, and actionable 
-                insights generation for policy and strategic decision-making.
-              </div>
+          </div>
+          
+          <div style={{ background: 'rgba(20, 184, 166, 0.1)', border: '1px solid #14b8a6', borderRadius: '0.75rem', padding: '1.5rem', borderLeft: '4px solid #2dd4bf' }}>
+            <div style={{ fontSize: '1.125rem', fontWeight: '600', color: '#5eead4', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              📈 Business Intelligence
             </div>
-            
-            <div style={{ background: 'rgba(20, 184, 166, 0.1)', border: '1px solid #14b8a6', borderRadius: '0.75rem', padding: '1.5rem', borderLeft: '4px solid #99f6e4' }}>
-              <div style={{ fontSize: '1.125rem', fontWeight: '600', color: '#5eead4', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                🎯 Data Storytelling
-              </div>
-              <div style={{ fontSize: '0.95rem', lineHeight: 1.6, color: '#a7f3d0' }}>
-                Multi-phase narrative development, stakeholder communication, 
-                and publication-ready visualisations for technical and executive audiences.
-              </div>
+            <div style={{ fontSize: '0.95rem', lineHeight: 1.6, color: '#a7f3d0' }}>
+              Industry benchmarking, economic impact assessment, and actionable 
+              insights generation for policy and strategic decision-making.
+            </div>
+          </div>
+          
+          <div style={{ background: 'rgba(20, 184, 166, 0.1)', border: '1px solid #14b8a6', borderRadius: '0.75rem', padding: '1.5rem', borderLeft: '4px solid #99f6e4' }}>
+            <div style={{ fontSize: '1.125rem', fontWeight: '600', color: '#5eead4', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              🎯 Data Storytelling
+            </div>
+            <div style={{ fontSize: '0.95rem', lineHeight: 1.6, color: '#a7f3d0' }}>
+              Multi-phase narrative development, stakeholder communication, 
+              and publication-ready visualisations for technical and executive audiences.
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Featured Project Preview */}
       <section style={{ padding: '5rem 0', background: '#0f766e' }}>
