@@ -76,10 +76,11 @@ export default function TimelineChart() {
           
           // Try multiple potential paths for production builds
           const possiblePaths = [
-            '/data/timeline_data_m62.csv',
-            './data/timeline_data_m62.csv',
-            '/public/data/timeline_data_m62.csv',
-            `${process.env.NODE_ENV === 'production' ? '' : ''}/data/timeline_data_m62.csv`
+            '/data/timeline_data_M62.csv',
+            './data/timeline_data_M62.csv',
+            '/public/data/timeline_data_M62.csv',
+            '/data/timeline_data_m62.csv',  // fallback with lowercase
+            `${process.env.NODE_ENV === 'production' ? '' : ''}/data/timeline_data_M62.csv`
           ]
           
           let csvData = null
