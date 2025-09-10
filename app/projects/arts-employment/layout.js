@@ -1,4 +1,5 @@
 export const metadata = {
+  metadataBase: new URL('https://www.jessferraro.com'),  
   title: 'The Arts Bounce Back | COVID Employment Analysis by Jess Ferraro',
   description: 'Comprehensive analysis of Australia\'s arts industry recovery from COVID-19. How the sector achieved 86% recovery using 440k+ ABS data points.',
   keywords: 'arts employment analysis, COVID recovery, Australian employment data, workforce analytics, Jess Ferraro',

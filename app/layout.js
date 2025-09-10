@@ -6,6 +6,7 @@ import Navigation from './components/Navigation'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
+  metadataBase: new URL('https://www.jessferraro.com'),
   title: 'Jess Ferraro - Data Analyst Portfolio',
   description: 'Data Analyst specialising in workforce analytics and economic impact analysis. Currently Data Analyst Intern at EY. Central Coast, NSW.',
   keywords: 'Jess Ferraro, data analyst, workforce analytics, EY intern, Central Coast NSW, employment data, data visualisation',
