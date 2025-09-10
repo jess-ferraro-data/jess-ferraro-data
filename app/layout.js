@@ -71,6 +71,46 @@ export default function RootLayout({ children }) {
           `}
         </Script>
         
+        {/* External Link Click Tracking */}
+        <Script id="external-link-tracking" strategy="afterInteractive">
+          {`
+            // Track external link clicks
+            document.addEventListener('click', function(e) {
+              const link = e.target.closest('a');
+              if (link && link.href) {
+                const isExternal = link.hostname !== window.location.hostname;
+                const isDownload = link.download || link.href.includes('.pdf') || link.href.includes('.csv');
+                
+                if (isExternal) {
+                  gtag('event', 'click', {
+                    event_category: 'External Link',
+                    event_label: link.href,
+                    value: 1
+                  });
+                }
+                
+                if (isDownload) {
+                  gtag('event', 'file_download', {
+                    event_category: 'Download',
+                    event_label: link.href,
+                    value: 1
+                  });
+                }
+              }
+            });
+            
+            // Track project page engagement
+            if (window.location.pathname.includes('/projects/')) {
+              gtag('event', 'page_view', {
+                event_category: 'Project Page',
+                event_label: window.location.pathname,
+                value: 1
+              });
+            }
+          `}
+        </Script>
+
+
         {/* Structured Data for SEO */}
         <Script id="structured-data" type="application/ld+json">
           {`
