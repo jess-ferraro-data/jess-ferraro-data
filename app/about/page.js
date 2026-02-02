@@ -23,7 +23,7 @@ export default function AboutPage() {
             lineHeight: 1.6 
           }}>
             16 years of customer-focused problem solving, now applied to uncovering 
-            insights in Australian employment data. Currently a Data Analyst Intern at EY.
+            insights in Australian employment data. Currently an Asset Data and Reporting Analyst at TAFE NSW.
           </p>
         </div>
       </section>
