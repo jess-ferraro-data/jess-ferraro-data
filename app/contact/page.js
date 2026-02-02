@@ -251,7 +251,7 @@ export default function ContactPage() {
               <div style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>💼</div>
                 <h3 style={{ color: '#0f766e', marginBottom: '0.5rem', fontWeight: 'bold' }}>Current Role</h3>
-                <p style={{ color: '#6b7280' }}>Data Analyst Intern at EY</p>
+                <p style={{ color: '#6b7280' }}>Asset Data and Reporting Analyst at TAFE NSW</p>
               </div>
               
               <div style={{ textAlign: 'center' }}>
