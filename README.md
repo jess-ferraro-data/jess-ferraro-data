@@ -1,43 +1,58 @@
-# 📊 Jess Ferraro | Data Analyst | Workforce Analytics & Social Impact
+# 📊 Jess Ferraro | Data Analyst | Workforce & Compliance Analytics
 
-I'm passionate about transforming data into actionable insights that drive positive change, with expertise in workforce analytics, social equity research, and evidence-based decision making. Currently building a comprehensive portfolio showcasing analytical skills across diverse social impact domains.
+I'm a Data Analyst based on the Central Coast of NSW, currently working as an Asset Data and Reporting Analyst. I'm passionate about transforming complex data into clear, evidence-based insights — particularly in workforce analytics, employment data, and compliance analysis.
 
-## 🔍 Current Focus
+🌐 **Portfolio:** [jessferraro.com](https://www.jessferraro.com)
 
-**Portfolio Development**: Creating data-driven projects that demonstrate analytical rigour whilst addressing real-world social challenges, from arts employment equity to regional development insights.
+---
 
-## 🛠️ Technical Expertise
+## 🛠️ Technical Skills
 
-**Languages**: Python, SQL, R  
-**Professional Tools**: Databricks, Jupyter Notebooks, Git  
-**Analytics**: Statistical analysis, predictive modelling, data visualisation, time series analysis  
-**Emerging Skills**: Web scraping, API integration, interactive dashboard development  
-**Visualisation**: Plotly, Matplotlib, Seaborn, Tableau Public
+**Languages:** Python, R, SQL  
+**R stack:** tidyverse, ggplot2, lubridate  
+**Python stack:** Pandas, NumPy, Plotly  
+**Visualisation:** ggplot2, Plotly, Tableau Public  
+**Professional tools:** Power BI, Excel, Databricks  
+**Other:** ABS API integration, Next.js, Git, AI-assisted analysis workflows
+
+---
 
 ## 📈 Portfolio Projects
 
-### 🎭 Australian Arts Employment Analysis
-Comprehensive analysis of employment trends and equity in Australia's creative industries using ABS and government data. Examining COVID impact, gender pay gaps, and regional disparities.
-- **Skills**: Government API integration, time series analysis, social impact measurement
-- **Tools**: Python, Plotly, ABS APIs
+### ⚖️ Wage Compliance Analysis — Coastal Convenience Pty Ltd
+*R | tidyverse | ggplot2 | Statistical Detection*
 
-### 🚧 Upcoming Projects
-- **Theatre Industry Equity Index**: Multi-dimensional analysis of diversity and inclusion across Australian theatre companies
-- **Regional Arts Funding Impact**: Correlation analysis between government funding and community wellbeing indicators  
-- **Festival Accessibility Audit**: Web scraping and analysis of accessibility provisions across major Australian cultural events
+A four-script R pipeline simulating a payroll compliance review across a fictional three-store Central Coast retail chain, assessed against the General Retail Industry Award 2020 [MA000004]. Identifies $33,753 in underpayments across 20 employees using segment-level entitlement reconstruction and statistical detection via coefficient of variation analysis.
 
-## 🎯 What I'm Looking For
+- Synthetic dataset of 50 employees, 5,632 shifts, 6,187 payable segments
+- Two violation types modelled as realistic payroll misconfiguration
+- Coefficient of variation test independently identifies all non-compliant employees from payroll records alone
+- Four-script pipeline: dataset builder → data preparation → compliance analysis → visualisation
 
-Data analyst roles focused on **workforce analytics**, **social impact**, and **evidence-based decision making**. Particularly interested in positions that align with progressive values, social equity, and using data to create meaningful change in communities and organisations.
-
-## 📍 Based in Central Coast, NSW, Australia
-
-### 🎵 Beyond the Data
-When I'm not analysing datasets, you'll find me immersed in musical theatre, exploring Australian nature, or diving deep into social impact research. These interests often inspire my analytical work, bringing a human-centred perspective to data storytelling.
-
-### 📫 Let's Connect
-- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/jessferraro/)
-- **Location**: Central Coast, NSW, Australia
+🔗 [View full analysis](https://www.jessferraro.com/projects/wage-compliance) | 📁 Repository coming soon
 
 ---
-*"Turning data into insights that drive positive change"*
+
+### 🎭 Australian Arts Employment Recovery Analysis
+*Python | Pandas | Plotly | ABS API*
+
+Comprehensive three-phase analysis tracking Australia's Arts and Recreation sector through COVID-19 disruption and recovery. Uses 440,000+ data points from the ABS Labour Account to reveal how the hardest-hit industry became the second-fastest to recover.
+
+- -15.5% peak employment decline during COVID (worst of all service industries)
+- 86% recovery rate achieved — #2 industry ranking
+- Interactive visualisations with real-time ABS API data integration
+
+🔗 [View full analysis](https://www.jessferraro.com/projects/arts-employment)
+
+---
+
+## 🔍 Current Focus
+
+Building portfolio projects at the intersection of workforce data and social equity — exploring employment compliance, regional skills gaps, and evidence-based policy insights using Australian government data sources.
+
+---
+
+## 📫 Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jessferraro-0077b5?style=flat&logo=linkedin)](https://www.linkedin.com/in/jessferraro/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-jessferraro.com-0f766e?style=flat)](https://www.jessferraro.com)
