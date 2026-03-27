@@ -8,13 +8,13 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   metadataBase: new URL('https://www.jessferraro.com'),
   title: 'Jess Ferraro - Data Analyst Portfolio',
-  description: 'Data Analyst specialising in workforce analytics and economic impact analysis. Currently Data Analyst Intern at EY. Central Coast, NSW.',
-  keywords: 'Jess Ferraro, data analyst, workforce analytics, EY intern, Central Coast NSW, employment data, data visualisation',
+  description: 'Data Analyst specialising in workforce analytics, compliance analysis, and economic impact analysis. Currently Asset Data and Reporting Analyst at TAFE NSW. Central Coast, NSW.',
+  keywords: 'Jess Ferraro, data analyst, workforce analytics, compliance analytics, TAFE NSW, Central Coast NSW, employment data, data visualisation, R, Python',
   authors: [{ name: 'Jess Ferraro' }],
   creator: 'Jess Ferraro',
   openGraph: {
     title: 'Jess Ferraro - Data Analyst Portfolio',
-    description: 'Data Analyst specialising in workforce analytics and economic impact analysis. View my COVID-19 employment recovery analysis and other projects.',
+    description: 'Data Analyst specialising in workforce analytics, compliance analysis, and economic impact analysis. View my wage compliance and arts employment recovery projects.',
     url: 'https://www.jessferraro.com',
     siteName: 'Jess Ferraro Data Portfolio',
     locale: 'en_AU',
@@ -31,7 +31,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Jess Ferraro - Data Analyst Portfolio',
-    description: 'Data Analyst specialising in workforce analytics and economic impact analysis.',
+    description: 'Data Analyst specialising in workforce analytics, compliance analysis, and economic impact analysis.',
     images: ['/images/og-image.jpg']
   },
   robots: {
@@ -70,17 +70,16 @@ export default function RootLayout({ children }) {
             });
           `}
         </Script>
-        
+
         {/* External Link Click Tracking */}
         <Script id="external-link-tracking" strategy="afterInteractive">
           {`
-            // Track external link clicks
             document.addEventListener('click', function(e) {
               const link = e.target.closest('a');
               if (link && link.href) {
                 const isExternal = link.hostname !== window.location.hostname;
                 const isDownload = link.download || link.href.includes('.pdf') || link.href.includes('.csv');
-                
+
                 if (isExternal) {
                   gtag('event', 'click', {
                     event_category: 'External Link',
@@ -88,7 +87,7 @@ export default function RootLayout({ children }) {
                     value: 1
                   });
                 }
-                
+
                 if (isDownload) {
                   gtag('event', 'file_download', {
                     event_category: 'Download',
@@ -98,8 +97,7 @@ export default function RootLayout({ children }) {
                 }
               }
             });
-            
-            // Track project page engagement
+
             if (window.location.pathname.includes('/projects/')) {
               gtag('event', 'page_view', {
                 event_category: 'Project Page',
@@ -109,7 +107,6 @@ export default function RootLayout({ children }) {
             }
           `}
         </Script>
-
 
         {/* Structured Data for SEO */}
         <Script id="structured-data" type="application/ld+json">
@@ -121,7 +118,7 @@ export default function RootLayout({ children }) {
               "jobTitle": "Data Analyst",
               "worksFor": {
                 "@type": "Organization",
-                "name": "EY"
+                "name": "TAFE NSW"
               },
               "url": "https://www.jessferraro.com",
               "sameAs": [
@@ -130,12 +127,14 @@ export default function RootLayout({ children }) {
               ],
               "knowsAbout": [
                 "Data Analysis",
-                "Workforce Analytics", 
+                "Workforce Analytics",
+                "Compliance Analytics",
                 "Python",
+                "R",
                 "Data Visualisation",
-                "Employment Statistics"
+                "Employment Statistics",
+                "Statistical Detection Methods"
               ],
-              "alumniOf": "University of New South Wales",
               "address": {
                 "@type": "PostalAddress",
                 "addressRegion": "NSW",
@@ -148,44 +147,40 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navigation />
         {children}
-        
+
         {/* Event tracking script */}
         <Script id="custom-analytics" strategy="afterInteractive">
           {`
-            // Custom event tracking
             function trackEvent(eventName, parameters = {}) {
-              gtag(&apos;event&apos;, eventName, {
+              gtag('event', eventName, {
                 custom_parameter: parameters,
                 page_title: document.title,
                 page_location: window.location.href
               });
             }
-            
-            // Track project views
+
             function trackProjectView(projectName) {
-              gtag(&apos;event&apos;, &apos;project_view&apos;, {
+              gtag('event', 'project_view', {
                 project_name: projectName,
                 engagement_time_msec: Date.now()
               });
             }
-            
-            // Track downloads
+
             function trackDownload(fileName, fileType) {
-              gtag(&apos;event&apos;, &apos;file_download&apos;, {
+              gtag('event', 'file_download', {
                 file_name: fileName,
                 file_type: fileType
               });
             }
-            
-            // Track external links
-            document.addEventListener(&apos;click&apos;, function(e) {
-              if (e.target.tagName === &apos;A&apos; && e.target.href) {
+
+            document.addEventListener('click', function(e) {
+              if (e.target.tagName === 'A' && e.target.href) {
                 const url = new URL(e.target.href);
                 if (url.hostname !== window.location.hostname) {
-                  gtag(&apos;event&apos;, &apos;click&apos;, {
-                    event_category: &apos;external_link&apos;,
+                  gtag('event', 'click', {
+                    event_category: 'external_link',
                     event_label: url.hostname,
-                    transport_type: &apos;beacon&apos;
+                    transport_type: 'beacon'
                   });
                 }
               }
